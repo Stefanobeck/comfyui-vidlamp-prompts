@@ -336,10 +336,27 @@ def _save_xlsx(path, pictures, prompts, thumb_width=384):
     _save_xlsx_grid(path, prompts, [("Picture", pictures)], thumb_width)
 
 
-def _save_xlsx_grid(path, prompts, columns, thumb_width=384, texts=None):
+def _save_xlsx_grid(path, prompts, columns, thumb_width=384, texts=None, links=None):
     """One row per prompt: the number, one picture per column (columns = [(label, pictures)], e.g. one per model),
-    then the full prompt, then optional text columns (texts = [(label, strings)]: the prompt each model received)."""
+    then the full prompt, then optional text columns (texts = [(label, strings)]: the prompt each model received),
+    then optional file columns (links = [(label, file names)]: the picture files, clickable, in the same folder as
+    the Excel file; 10/11/2026, the user: "in the Excel I want the path and name of every picture")."""
     texts = texts or []
+    links = links or []
+    hyper = []                                        # (cell, file name)
+    first_link = len(columns) + 2 + len(texts)
+
+    def link_cells(i, r):
+        cells = ""
+        for j, (_, names) in enumerate(links):
+            name = names[i] if i < len(names) else ""
+            if not name:
+                continue
+            ref = f"{_col(first_link + j)}{r}"
+            hyper.append((ref, name))
+            cells += (f'<c r="{ref}" t="inlineStr" s="3"><is><t xml:space="preserve">{_xml(name)}</t></is></c>')
+        return cells
+
     ns_r = "http://schemas.openxmlformats.org/officeDocument/2006/relationships"
     ns_main = "http://schemas.openxmlformats.org/spreadsheetml/2006/main"
     ns_pkg = "http://schemas.openxmlformats.org/package/2006/relationships"
@@ -353,6 +370,8 @@ def _save_xlsx_grid(path, prompts, columns, thumb_width=384, texts=None):
     head += f'<c r="{prompt_col}1" t="inlineStr" s="2"><is><t>Prompt</t></is></c>'
     for j, (label, _) in enumerate(texts):
         head += f'<c r="{_col(len(columns) + 2 + j)}1" t="inlineStr" s="2"><is><t>{_xml(label)}</t></is></c>'
+    for j, (label, _) in enumerate(links):
+        head += f'<c r="{_col(first_link + j)}1" t="inlineStr" s="2"><is><t>{_xml(label)}</t></is></c>'
     rows.append(f'<row r="1" ht="20" customHeight="1">{head}</row>')
     for i in range(n_rows):
         r = i + 2
@@ -385,7 +404,7 @@ def _save_xlsx_grid(path, prompts, columns, thumb_width=384, texts=None):
                     f'</is></c>' + "".join(
                         f'<c r="{_col(len(columns) + 2 + j)}{r}" t="inlineStr" s="1"><is><t xml:space="preserve">'
                         f'{_xml(vals[i] if i < len(vals) else "")}</t></is></c>' for j, (_, vals) in enumerate(texts))
-                    + '</row>')
+                    + link_cells(i, r) + '</row>')
     picture_col = thumb_width / 7 + 2                 # column width in characters
     files = {
         "[Content_Types].xml":
@@ -414,16 +433,19 @@ def _save_xlsx_grid(path, prompts, columns, thumb_width=384, texts=None):
             f'<Relationship Id="rId2" Type="{ns_r}/styles" Target="styles.xml"/></Relationships>',
         "xl/styles.xml":
             f'<?xml version="1.0" encoding="UTF-8" standalone="yes"?><styleSheet xmlns="{ns_main}">'
-            '<fonts count="2"><font><sz val="11"/><name val="Calibri"/></font>'
-            '<font><b/><sz val="11"/><name val="Calibri"/></font></fonts>'
+            '<fonts count="3"><font><sz val="11"/><name val="Calibri"/></font>'
+            '<font><b/><sz val="11"/><name val="Calibri"/></font>'
+            '<font><u/><sz val="11"/><color rgb="FF0563C1"/><name val="Calibri"/></font></fonts>'
             '<fills count="2"><fill><patternFill patternType="none"/></fill>'
             '<fill><patternFill patternType="gray125"/></fill></fills>'
             '<borders count="1"><border><left/><right/><top/><bottom/><diagonal/></border></borders>'
             '<cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs>'
-            '<cellXfs count="3"><xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0"/>'
+            '<cellXfs count="4"><xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0"/>'
             '<xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0" applyAlignment="1">'
             '<alignment vertical="top" wrapText="1"/></xf>'
-            '<xf numFmtId="0" fontId="1" fillId="0" borderId="0" xfId="0" applyFont="1"/></cellXfs>'
+            '<xf numFmtId="0" fontId="1" fillId="0" borderId="0" xfId="0" applyFont="1"/>'
+            '<xf numFmtId="0" fontId="2" fillId="0" borderId="0" xfId="0" applyFont="1" applyAlignment="1">'
+            '<alignment vertical="top"/></xf></cellXfs>'
             '</styleSheet>',
         "xl/worksheets/sheet1.xml":
             f'<?xml version="1.0" encoding="UTF-8" standalone="yes"?><worksheet xmlns="{ns_main}" xmlns:r="{ns_r}">'
@@ -432,11 +454,17 @@ def _save_xlsx_grid(path, prompts, columns, thumb_width=384, texts=None):
             f'<cols><col min="1" max="1" width="5" customWidth="1"/>'
             f'<col min="2" max="{len(columns) + 1}" width="{picture_col:.1f}" customWidth="1"/>'
             f'<col min="{len(columns) + 2}" max="{len(columns) + 2 + len(texts)}" '
-            f'width="{110 if len(columns) == 1 else 70}" customWidth="1"/></cols>'
-            f'<sheetData>{"".join(rows)}</sheetData><drawing r:id="rId1"/></worksheet>',
+            f'width="{110 if len(columns) == 1 else 70}" customWidth="1"/>'
+            + (f'<col min="{first_link}" max="{first_link + len(links) - 1}" width="42" customWidth="1"/>'
+               if links else '') + '</cols>'
+            f'<sheetData>{"".join(rows)}</sheetData>'
+            + (('<hyperlinks>' + "".join(f'<hyperlink ref="{ref}" r:id="rIdL{k}"/>' for k, (ref, _) in enumerate(hyper))
+                + '</hyperlinks>') if hyper else '') + '<drawing r:id="rId1"/></worksheet>',
         "xl/worksheets/_rels/sheet1.xml.rels":
             f'<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="{ns_pkg}">'
-            f'<Relationship Id="rId1" Type="{ns_r}/drawing" Target="../drawings/drawing1.xml"/></Relationships>',
+            f'<Relationship Id="rId1" Type="{ns_r}/drawing" Target="../drawings/drawing1.xml"/>'
+            + "".join(f'<Relationship Id="rIdL{k}" Type="{ns_r}/hyperlink" Target="{_xml(name)}" TargetMode="External"/>'
+                      for k, (_, name) in enumerate(hyper)) + '</Relationships>',
         "xl/drawings/drawing1.xml":
             '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
             '<xdr:wsDr xmlns:xdr="http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing" '
@@ -657,14 +685,27 @@ class VidlampPromptSheetCompare:
                     w.writerow([f"Model comparison {stamp}", f"#{i + 1} {label}", vals[i], ""])
         with open(os.path.join(full, base + ".csv"), "w", encoding="utf-8-sig", newline="") as f:
             f.write(buf.getvalue())
-        _save_xlsx_grid(os.path.join(full, base + ".xlsx"), prompts, columns, texts=texts)
-        print(f"{LOG} comparison saved: {os.path.join(full, base + '.png')} (+ .csv, .xlsx), "
+        # every picture of every model saved here, next to the sheet, with a clear name (model + prompt number):
+        # the Excel file lists them, clickable (10/11/2026, the user: "the path and name of every picture")
+        links, saved = [], []
+        for label, pics in columns:
+            slug = "".join(ch if ch.isalnum() else "-" for ch in label).strip("-")
+            names = []
+            for r, pic in enumerate(pics):
+                fname = f"{base}{slug}_{r + 1:02d}.png"
+                pic.convert("RGB").save(os.path.join(full, fname), compress_level=4)
+                names.append(fname)
+                saved.append({"filename": fname, "subfolder": sub, "type": "output"})
+            links.append((f"{label} · file", names))
+        _save_xlsx_grid(os.path.join(full, base + ".xlsx"), prompts, columns, texts=texts, links=links)
+        print(f"{LOG} comparison saved: {os.path.join(full, base + '.png')} (+ .csv, .xlsx, {len(saved)} pictures), "
               f"{len(columns)} models: {', '.join(l for l, _ in columns)}")
 
         tensor = torch.from_numpy(np.asarray(sheet).astype(np.float32) / 255.0)[None,]
         # "vidlamp_files": the Excel and CSV files, so Vidlamp can save them with the creation (10/11/2026)
         files = [{"filename": base + ext, "subfolder": sub, "type": "output"} for ext in (".xlsx", ".csv")]
-        return {"ui": {"images": [{"filename": base + ".png", "subfolder": sub, "type": "output"}],
+        # the sheet first (the result to show), then the pictures of the models
+        return {"ui": {"images": [{"filename": base + ".png", "subfolder": sub, "type": "output"}] + saved,
                        "vidlamp_files": files},
                 "result": (tensor,)}
 
