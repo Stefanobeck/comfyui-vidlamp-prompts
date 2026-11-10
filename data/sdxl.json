@@ -1,0 +1,797 @@
+{
+    "family": "sdxl",
+    "nota": "Prompt pronti per SDXL (checkpoint realistici e Turbo): stessi soggetti del set foto, una riga di frasi separate da virgole, al massimo 45 parole, soggetto nelle prime parole, colore subito prima del nome; niente negazioni, niente pesi. Scritti l'8/10/2026 seguendo la guida di SDXL.",
+    "categorie": [
+        {
+            "id": "ritratto",
+            "label": {
+                "it": "Personaggi",
+                "en": "Characters"
+            },
+            "prompt": [
+                {
+                    "titolo": {
+                        "it": "Vecchio pescatore",
+                        "en": "Old fisherman"
+                    },
+                    "testo": "close-up portrait of an old Sicilian fisherman, deep wrinkles, white stubble, red knit cap, navy wool sweater, sitting on a wooden boat in a harbor, low morning sun, documentary photo, shallow depth of field, film grain"
+                },
+                {
+                    "titolo": {
+                        "it": "Ballerina dietro le quinte",
+                        "en": "Dancer backstage"
+                    },
+                    "testo": "young Black ballet dancer lacing pointe shoes backstage, pale pink leotard, grey warm-up wrap, hair bun, mirror with round bulbs, hanging tutus, warm tungsten light, candid photo, shallow depth of field"
+                },
+                {
+                    "titolo": {
+                        "it": "Fabbro alla forgia",
+                        "en": "Blacksmith at the forge"
+                    },
+                    "testo": "South Asian blacksmith hammering a glowing iron bar on an anvil, black beard, leather apron, flying sparks, dark workshop, orange forge light, dramatic portrait, high contrast, sharp detail"
+                },
+                {
+                    "titolo": {
+                        "it": "Nonna in cucina",
+                        "en": "Grandmother in the kitchen"
+                    },
+                    "testo": "Korean grandmother folding dumplings at a kitchen table, short grey hair, lavender cardigan, gentle smile, flour on a wooden board, steam, soft window light, warm lifestyle photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Ritratto in chiaroscuro",
+                        "en": "Chiaroscuro studio portrait"
+                    },
+                    "testo": "low-key studio portrait of a middle-aged man, curly grey hair, grey beard, charcoal turtleneck, Rembrandt lighting, black background, sharp eyes, detailed skin texture, 105mm photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Lentiggini al tramonto",
+                        "en": "Freckles at golden hour"
+                    },
+                    "testo": "teenage girl with copper red hair and freckles, cream knit sweater, tall dry grass, golden hour backlight, rim light on hair, close-up portrait, creamy bokeh, warm tones"
+                },
+                {
+                    "titolo": {
+                        "it": "Sassofonista jazz",
+                        "en": "Jazz saxophonist"
+                    },
+                    "testo": "elderly African American jazz musician playing tenor saxophone, dark suit, burgundy tie, fedora, eyes closed, small club stage, narrow spotlight, haze, warm amber and blue tones, moody photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Apicoltrice",
+                        "en": "Beekeeper"
+                    },
+                    "testo": "Mexican beekeeper woman holding a honeycomb frame, white protective jacket, veil pushed back, dark braid, bees, golden honey, yellow wildflower meadow, pastel blue hives, late afternoon sun, documentary photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Sotto la pioggia al neon",
+                        "en": "Neon rain portrait"
+                    },
+                    "testo": "Japanese man under a clear umbrella on a rainy Tokyo street at night, black overcoat, white shirt, pink and cyan neon signs, bokeh, wet reflections, cinematic portrait, shallow depth of field"
+                },
+                {
+                    "titolo": {
+                        "it": "Pastora delle Ande",
+                        "en": "Andean shepherd"
+                    },
+                    "testo": "Quechua woman with a white alpaca on a high Andean plateau, red and orange woven poncho, felt bowler hat, long black braids, snowy peaks, deep blue sky, bright sunlight, travel photo"
+                }
+            ],
+            "componi": "characters"
+        },
+        {
+            "id": "moda",
+            "label": {
+                "it": "Moda",
+                "en": "Fashion"
+            },
+            "prompt": [
+                {
+                    "titolo": {
+                        "it": "Editoriale nel deserto",
+                        "en": "Desert editorial"
+                    },
+                    "testo": "tall Somali model in a flowing burnt-orange silk gown walking on a sand dune, gold cuffs, sleek bun, fabric in the wind, low sun, long shadows, high fashion editorial photo, minimal"
+                },
+                {
+                    "titolo": {
+                        "it": "Street style a Tokyo",
+                        "en": "Tokyo street style"
+                    },
+                    "testo": "street style photo in Harajuku, young person in a lime green puffer jacket, checked shirt, wide black cargo pants, chunky white sneakers, bleached short hair, round tinted glasses, overcast light, full body"
+                },
+                {
+                    "titolo": {
+                        "it": "Abito da sera sullo scalone",
+                        "en": "Evening gown on the staircase"
+                    },
+                    "testo": "elegant woman with short platinum hair in an emerald velvet gown on a white marble staircase, Italian palazzo, crystal chandelier, gilded frames, soft window light, full body fashion photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Doppiopetto a Milano",
+                        "en": "Double-breasted in Milan"
+                    },
+                    "testo": "Senegalese man in a camel double-breasted suit walking under a Milan arcade, cream knit polo, suede loafers, tortoiseshell sunglasses, leather briefcase, morning sun, menswear campaign photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Collezione invernale",
+                        "en": "Winter collection"
+                    },
+                    "testo": "model in a long charcoal wool coat in a snowy birch forest, ivory turtleneck, red beret, black gloves, falling snow, soft overcast light, winter fashion photo, shallow depth of field"
+                },
+                {
+                    "titolo": {
+                        "it": "Look anni Settanta",
+                        "en": "Seventies look"
+                    },
+                    "testo": "Brazilian woman with a curly afro roller skating in a 1970s roller rink, flared jeans, mustard top, gold hoop earrings, mirror ball, colored spotlights, motion blur, retro film photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Gioielli in primo piano",
+                        "en": "Jewelry close-up"
+                    },
+                    "testo": "close-up of a woman's neck and hand, layered gold chains, pearl pendant, gold drop earrings, stacked thin rings, deep brown skin, soft directional light, beige background, luxury jewelry photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Campagna sportiva all'alba",
+                        "en": "Sportswear campaign at dawn"
+                    },
+                    "testo": "Kenyan female sprinter in starting stance on a red running track at dawn, black crop top, black shorts, neon yellow spikes, empty stadium, rim light, low angle sportswear photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Sfilata",
+                        "en": "Runway show"
+                    },
+                    "testo": "male model with a shaved head walking a white catwalk, oversized sculptural white shirt, wide black trousers, black boots, audience in shadow, hard spotlight, runway photo, telephoto"
+                },
+                {
+                    "titolo": {
+                        "it": "Moda sostenibile in serra",
+                        "en": "Sustainable fashion in a greenhouse"
+                    },
+                    "testo": "Vietnamese woman in a loose linen shirt dress and straw hat in an old glass greenhouse, ferns, lemon trees, vines, watering can, dappled sunlight, soft natural fashion photo"
+                }
+            ]
+        },
+        {
+            "id": "prodotto",
+            "label": {
+                "it": "Prodotto",
+                "en": "Product"
+            },
+            "prompt": [
+                {
+                    "titolo": {
+                        "it": "Profumo su pietra",
+                        "en": "Perfume on stone"
+                    },
+                    "testo": "square glass perfume bottle with a gold cap on dark volcanic stone, amber liquid, dried orange slice, rosemary sprig, water reflections, hard side light, charcoal background, luxury product photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Orologio da polso",
+                        "en": "Wristwatch macro"
+                    },
+                    "testo": "steel wristwatch with a blue sunburst dial on a brown leather strap, water droplets on the crystal, dark slate background, strip light reflections, macro product photo, sharp detail"
+                },
+                {
+                    "titolo": {
+                        "it": "Sneaker sospesa",
+                        "en": "Floating sneaker"
+                    },
+                    "testo": "white running sneaker with mint green accents floating in mid-air, pastel foam bursting around the sole, soft peach background, bright studio light, commercial product photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Cosmetici dall'alto",
+                        "en": "Cosmetics flat lay"
+                    },
+                    "testo": "flat lay of skincare products on pink travertine, frosted serum bottle, white cream jar, glass roller, dried rose petals, sunlight with leaf shadows, top-down photo, minimal and airy"
+                },
+                {
+                    "titolo": {
+                        "it": "Cuffie su colore pieno",
+                        "en": "Headphones on bold color"
+                    },
+                    "testo": "matte black over-ear headphones on a cobalt blue pedestal, bright orange wall, hard light, sharp graphic shadow, minimalist pop art product photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Olio nell'uliveto",
+                        "en": "Olive oil in the grove"
+                    },
+                    "testo": "tall green glass bottle of olive oil on a weathered wooden table in an olive grove, dish of golden oil, crusty bread, green olives, warm backlight, rustic product photo, bokeh"
+                },
+                {
+                    "titolo": {
+                        "it": "Candela artigianale",
+                        "en": "Handmade candle"
+                    },
+                    "testo": "lit soy candle in a matte terracotta jar, melted wax pool, linen cloth, dried eucalyptus, long matches, dim cozy living room, warm candlelight, product photo, shallow depth of field"
+                },
+                {
+                    "titolo": {
+                        "it": "Lattina gelata",
+                        "en": "Ice-cold soda can"
+                    },
+                    "testo": "coral red aluminum soda can covered in condensation droplets in crushed ice, lime slices, mint leaves, cold mist, aqua background, crisp highlights, refreshing commercial photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Borsa in pelle",
+                        "en": "Leather bag"
+                    },
+                    "testo": "tan leather handbag with saddle stitching and brass clasp on a travertine block, olive silk scarf on the handle, warm stone background, soft studio light, premium product photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Tazza al mattino",
+                        "en": "Morning mug"
+                    },
+                    "testo": "handmade speckled beige ceramic mug of black coffee on an oak windowsill, rising steam, open notebook, blurred green garden, soft morning light, lifestyle product photo"
+                }
+            ]
+        },
+        {
+            "id": "cibo",
+            "label": {
+                "it": "Cibo",
+                "en": "Food"
+            },
+            "prompt": [
+                {
+                    "titolo": {
+                        "it": "Margherita dal forno a legna",
+                        "en": "Wood-fired margherita"
+                    },
+                    "testo": "Neapolitan margherita pizza on a wooden peel, leopard-spotted crust, tomato, melted mozzarella, fresh basil, olive oil, glowing wood-fired oven behind, warm light, food photo, shallow depth of field"
+                },
+                {
+                    "titolo": {
+                        "it": "Ramen fumante",
+                        "en": "Steaming ramen"
+                    },
+                    "testo": "bowl of tonkotsu ramen in a black ceramic bowl, noodles lifted with chopsticks, chashu pork, soft egg with jammy yolk, scallions, nori, thick steam, dark background, moody food photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Colazione al bar",
+                        "en": "Italian bar breakfast"
+                    },
+                    "testo": "Italian breakfast on a marble café table, cappuccino with latte art, cornetto with powdered sugar, orange juice, folded newspaper, morning sun, chrome espresso machine behind, food photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Tagliere di salumi",
+                        "en": "Charcuterie board"
+                    },
+                    "testo": "olive wood board with prosciutto, salami, parmigiano, gorgonzola, green olives, halved figs, walnuts, honey jar, breadsticks, red wine glass, soft daylight, overhead food photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Fetta di torta al cioccolato",
+                        "en": "Chocolate cake slice"
+                    },
+                    "testo": "slice of dark chocolate layer cake with dripping glossy ganache, fresh raspberries, cocoa powder, silver fork, grey plate, dark slate background, soft backlight, indulgent food photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Tacos al mercato",
+                        "en": "Street market tacos"
+                    },
+                    "testo": "three tacos al pastor on a plate at a Mexican market stall, corn tortillas, pork, pineapple, onion, cilantro, lime wedge, red salsa, vertical spit behind, vibrant street food photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Insalata estiva dall'alto",
+                        "en": "Summer salad from above"
+                    },
+                    "testo": "ceramic bowl of summer salad, heirloom tomatoes, torn burrata, peach wedges, basil, pine nuts, olive oil, white linen tablecloth, bright daylight, overhead food photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Pasta fatta a mano",
+                        "en": "Handmade pasta"
+                    },
+                    "testo": "close-up of an old woman's hands shaping fresh orecchiette on a floured wooden board, rows of pasta, semolina flour, flour dust in the air, warm window light, food photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Cocktail al bancone",
+                        "en": "Cocktail at the bar"
+                    },
+                    "testo": "negroni in a crystal tumbler with a large clear ice cube and orange peel, dark walnut bar counter, glowing bottle shelves bokeh, ruby red drink, moody bar photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Gelato e frutti di bosco",
+                        "en": "Gelato with berries"
+                    },
+                    "testo": "waffle cone with strawberry and pistachio gelato, fresh blueberries and raspberries on top, melting drip, hand holding the cone, pale blue sky, bright sun, summery food photo"
+                }
+            ]
+        },
+        {
+            "id": "paesaggio",
+            "label": {
+                "it": "Paesaggio",
+                "en": "Landscape"
+            },
+            "prompt": [
+                {
+                    "titolo": {
+                        "it": "Dolomiti all'alba",
+                        "en": "Dolomites at dawn"
+                    },
+                    "testo": "jagged Dolomite peaks glowing pink at dawn, green alpine meadow, small wooden hut, winding path, mist in the valley, wide landscape photo, deep depth of field"
+                },
+                {
+                    "titolo": {
+                        "it": "Faro nella tempesta",
+                        "en": "Lighthouse in a storm"
+                    },
+                    "testo": "red and white lighthouse on black rocks in a storm, huge crashing waves, white spray, light beam through dark clouds, dramatic seascape photo, high contrast"
+                },
+                {
+                    "titolo": {
+                        "it": "Campi di lavanda",
+                        "en": "Lavender fields"
+                    },
+                    "testo": "rows of purple lavender leading to an old stone farmhouse in Provence, single green tree, rolling hills, late afternoon sun, long shadows, wide landscape photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Dune al tramonto",
+                        "en": "Dunes at sunset"
+                    },
+                    "testo": "sweeping orange sand dunes at sunset, sharp crests, deep shadows, small camel caravan on a distant ridge, wind ripples, minimalist desert landscape photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Foresta nella nebbia",
+                        "en": "Misty forest"
+                    },
+                    "testo": "beech forest in thick morning fog, tall grey trunks, copper fallen leaves, moss, sunbeams through the canopy, winding trail, atmospheric landscape photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Aurora in Islanda",
+                        "en": "Northern lights in Iceland"
+                    },
+                    "testo": "green and violet northern lights over a black sand beach in Iceland, blue icebergs on the shore, reflections on wet sand, starry sky, snowy mountains, night landscape photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Risaie a terrazze",
+                        "en": "Rice terraces"
+                    },
+                    "testo": "curving flooded rice terraces on a hillside at sunrise, gold and pink sky reflections, green ridges, small farmhouses, light mist, elevated landscape photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Paese di mare colorato",
+                        "en": "Colorful seaside village"
+                    },
+                    "testo": "Italian fishing village with colorful pastel houses on a cliff, small harbor, wooden boats, turquoise water, terraced vineyards, bright sunlight, travel photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Città di notte dall'alto",
+                        "en": "City at night from above"
+                    },
+                    "testo": "aerial view of a modern city at night, glowing street grid, car light trails, lit office towers, river with illuminated bridges, blue hour horizon, long exposure photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Lago alpino in autunno",
+                        "en": "Alpine lake in autumn"
+                    },
+                    "testo": "glassy alpine lake with golden larch trees, wooden rowing boat at a small dock, snowy peaks reflected in the water, morning mist, calm autumn landscape photo"
+                }
+            ]
+        },
+        {
+            "id": "interni",
+            "label": {
+                "it": "Interni e architettura",
+                "en": "Interiors and architecture"
+            },
+            "prompt": [
+                {
+                    "titolo": {
+                        "it": "Soggiorno scandinavo",
+                        "en": "Scandinavian living room"
+                    },
+                    "testo": "bright Scandinavian living room, white walls, pale oak floor, grey linen sofa, round oak coffee table, dried grasses in a vase, sheepskin, fiddle-leaf fig, soft daylight, interior design photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Cucina toscana",
+                        "en": "Tuscan kitchen"
+                    },
+                    "testo": "rustic Tuscan farmhouse kitchen, wooden ceiling beams, terracotta floor, long wooden table, copper pots over a stone fireplace, basket of lemons, warm afternoon sun, interior photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Biblioteca antica",
+                        "en": "Old library"
+                    },
+                    "testo": "grand baroque library, two levels of carved walnut bookshelves, spiral staircase, painted ceiling, long reading tables, green brass lamps, symmetrical wide interior photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Loft industriale",
+                        "en": "Industrial loft"
+                    },
+                    "testo": "industrial loft with red brick walls, black steel windows, concrete floor, cognac leather sofa, vintage trunk table, Edison bulbs, abstract painting, late afternoon light, interior photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Bagno in marmo",
+                        "en": "Marble bathroom"
+                    },
+                    "testo": "luxury white marble bathroom with grey veining, freestanding stone bathtub under a tall window, brushed brass faucet, wooden stool with white towels, soft daylight, minimal interior photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Casa di vetro nel bosco",
+                        "en": "Glass cabin in the woods"
+                    },
+                    "testo": "modern glass cabin on stilts in a snowy pine forest at dusk, dark timber frame, warm interior light, wood stove, snow on the roof, blue hour, architectural photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Caffè parigino",
+                        "en": "Parisian café"
+                    },
+                    "testo": "classic Parisian café interior, dark wood paneling, gilded mirrors, zinc bar, marble tables, bentwood chairs, red leather banquettes, globe lamps, rainy daylight, interior photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Navata gotica",
+                        "en": "Gothic nave"
+                    },
+                    "testo": "Gothic cathedral nave, pointed arches, ribbed vaults, stained glass light on stone columns, wooden pews, incense haze, symmetrical architectural photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Stanza giapponese",
+                        "en": "Japanese room"
+                    },
+                    "testo": "traditional Japanese room, tatami mats, shoji screens, low wooden table with cast iron teapot, tokonoma with hanging scroll, open screen to a moss garden with maple, soft light"
+                },
+                {
+                    "titolo": {
+                        "it": "Scala a chiocciola",
+                        "en": "Spiral staircase"
+                    },
+                    "testo": "looking down a white spiral staircase, dark wooden handrail, black and white checkered floor at the bottom, skylight, symmetrical minimal architectural photo"
+                }
+            ]
+        },
+        {
+            "id": "animali",
+            "label": {
+                "it": "Animali",
+                "en": "Animals"
+            },
+            "prompt": [
+                {
+                    "titolo": {
+                        "it": "Volpe nella neve",
+                        "en": "Fox in the snow"
+                    },
+                    "testo": "red fox sitting in deep snow, thick orange winter coat, amber eyes, snowflakes, blurred dark pine trees, soft overcast light, wildlife photo, telephoto, shallow depth of field"
+                },
+                {
+                    "titolo": {
+                        "it": "Gatto alla finestra",
+                        "en": "Cat at the window"
+                    },
+                    "testo": "fluffy grey tabby cat on a wooden windowsill looking at the rain, raindrops on glass, potted succulent, knitted blanket, cool window light, cozy photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Leone nella savana",
+                        "en": "Lion in the savanna"
+                    },
+                    "testo": "male lion with a dark mane lying on a rock in the Serengeti, golden grass, acacia trees, warm late afternoon light, low angle wildlife photo, sharp eyes"
+                },
+                {
+                    "titolo": {
+                        "it": "Colibrì sul fiore",
+                        "en": "Hummingbird at a flower"
+                    },
+                    "testo": "ruby-throated hummingbird hovering at a red trumpet flower, frozen wings, iridescent feathers, green leaf bokeh, bright soft light, macro wildlife photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Cane sulla spiaggia",
+                        "en": "Dog on the beach"
+                    },
+                    "testo": "golden retriever running along the sea on a sandy beach, ears flying, happy face, water splashes, sunset backlight, golden rim light, low angle action photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Polpo sulla barriera",
+                        "en": "Octopus on the reef"
+                    },
+                    "testo": "octopus spreading its arms over a coral reef, textured orange skin, purple sea fans, yellow coral, small blue fish, sun rays from the surface, underwater wide angle photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Gufo nel bosco",
+                        "en": "Owl in the forest"
+                    },
+                    "testo": "tawny owl on a mossy branch in a dark forest at night, round face, large black eyes, mottled feathers, thin moon through branches, cool moonlight, wildlife photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Cavalli al galoppo",
+                        "en": "Galloping horses"
+                    },
+                    "testo": "herd of wild horses galloping across a shallow river, white spray, flowing manes, chestnut, black and grey horses, low golden backlight, dynamic action photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Rana sulla foglia",
+                        "en": "Tree frog on a leaf"
+                    },
+                    "testo": "bright green tree frog with red eyes and orange toes on a wet leaf, water droplets, dark rainforest bokeh, soft side flash, macro photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Panda rosso",
+                        "en": "Red panda"
+                    },
+                    "testo": "red panda resting on a mossy branch in a misty bamboo forest, russet fur, white face markings, striped tail, soft fog, diffused light, wildlife photo"
+                }
+            ]
+        },
+        {
+            "id": "fantasy",
+            "label": {
+                "it": "Fantasy",
+                "en": "Fantasy"
+            },
+            "prompt": [
+                {
+                    "titolo": {
+                        "it": "Drago sul castello",
+                        "en": "Dragon over the castle"
+                    },
+                    "testo": "giant bronze dragon with tattered wings circling a medieval castle on a cliff at dusk, smoke from nostrils, torches on towers, storm clouds, crashing sea, epic fantasy art, cinematic"
+                },
+                {
+                    "titolo": {
+                        "it": "Biblioteca del mago",
+                        "en": "Wizard's library"
+                    },
+                    "testo": "wizard's library in a round stone tower, tall bookshelves, brass telescope, starry window, glowing blue potions, floating books, sparks of light, candlelight, fantasy interior art"
+                },
+                {
+                    "titolo": {
+                        "it": "Bosco dei funghi luminosi",
+                        "en": "Glowing mushroom forest"
+                    },
+                    "testo": "ancient forest at night with giant glowing turquoise and violet mushrooms, moss, fireflies, small stream, lantern-lit wooden bridge, magical fantasy landscape"
+                },
+                {
+                    "titolo": {
+                        "it": "Guerriera elfa",
+                        "en": "Elf warrior"
+                    },
+                    "testo": "elf warrior woman with dark brown skin and long silver braids, pointed ears, bronze leaf armor, forest green tunic, longbow, autumn forest, falling golden leaves, fantasy portrait"
+                },
+                {
+                    "titolo": {
+                        "it": "Città tra le nuvole",
+                        "en": "City in the clouds"
+                    },
+                    "testo": "white marble towers with golden domes on floating rock islands above a sea of clouds, waterfalls, airships with canvas sails, arched bridges, morning light, epic fantasy cityscape"
+                },
+                {
+                    "titolo": {
+                        "it": "Mercato dei maghi",
+                        "en": "Wizards' market"
+                    },
+                    "testo": "fantasy market street at dusk, stalls with glowing crystals, potion bottles, dragon eggs, dwarf merchant, woman with a raven, paper lanterns, floating light orbs, detailed fantasy art"
+                },
+                {
+                    "titolo": {
+                        "it": "Villaggio sull'albero gigante",
+                        "en": "Giant tree village"
+                    },
+                    "testo": "colossal ancient tree with a village in its branches, round wooden houses with moss roofs, rope bridges, lit windows, waterfall from the trunk, golden light, fantasy art"
+                },
+                {
+                    "titolo": {
+                        "it": "Sirena nella grotta",
+                        "en": "Mermaid in a sea cave"
+                    },
+                    "testo": "mermaid with long dark wavy hair and a teal scaled tail sitting on a rock in a sea cave, sunbeam through the roof, turquoise water, pearls and shells, fantasy art"
+                },
+                {
+                    "titolo": {
+                        "it": "Golem tra le rovine",
+                        "en": "Golem in the ruins"
+                    },
+                    "testo": "giant moss-covered stone golem kneeling in jungle temple ruins, glowing amber runes, young traveler with a backpack looking up, hanging vines, mist, fantasy art, low angle"
+                },
+                {
+                    "titolo": {
+                        "it": "Isola sospesa",
+                        "en": "Floating island"
+                    },
+                    "testo": "small floating island in the sky with a blooming cherry tree and a tiny cottage, waterfall spilling from the edge, birds, misty valley below, sunrise light, dreamy fantasy art"
+                }
+            ]
+        },
+        {
+            "id": "fantascienza",
+            "label": {
+                "it": "Fantascienza",
+                "en": "Science fiction"
+            },
+            "prompt": [
+                {
+                    "titolo": {
+                        "it": "Città cyberpunk sotto la pioggia",
+                        "en": "Cyberpunk city in the rain"
+                    },
+                    "testo": "cyberpunk megacity street at night in heavy rain, pink and cyan holographic billboards, flying cars, food stalls with steam, woman in a glowing transparent raincoat, wet neon reflections, cinematic"
+                },
+                {
+                    "titolo": {
+                        "it": "Astronauta su Marte",
+                        "en": "Astronaut on Mars"
+                    },
+                    "testo": "astronaut in a white and orange spacesuit walking on red Mars terrain, dust, six-wheeled rover, dome habitat, layered cliffs, salmon sky, realistic sci-fi photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Stazione spaziale",
+                        "en": "Space station"
+                    },
+                    "testo": "space station observation deck, curved window with Earth below, two crew members in grey flight suits floating, white padded walls, control panels, cool interior light, sci-fi photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Robot giardiniere",
+                        "en": "Gardener robot"
+                    },
+                    "testo": "old rounded white robot with a blue lens eye watering plants in a rooftop garden, copper watering can, tomato plants, sunflowers, city skyline with wind turbines, soft morning light"
+                },
+                {
+                    "titolo": {
+                        "it": "Astronave nell'hangar",
+                        "en": "Spaceship in the hangar"
+                    },
+                    "testo": "sleek dark grey spaceship in a huge hangar, mechanics in orange coveralls, welding sparks, floodlights, open door to a desert planet at dusk, sci-fi photo, low angle"
+                },
+                {
+                    "titolo": {
+                        "it": "Colonia sul pianeta di ghiaccio",
+                        "en": "Ice planet colony"
+                    },
+                    "testo": "research colony on a frozen planet, white modular habitats, antennas with red lights, snowy solar panels, tracked vehicle, giant ringed planet in a pale green sky, sci-fi landscape"
+                },
+                {
+                    "titolo": {
+                        "it": "Ritratto di androide",
+                        "en": "Android portrait"
+                    },
+                    "testo": "female android with East African features, open cheek panel showing gold circuitry and blue lights, short black hair, calm eyes, soft studio light, blue rim light, sci-fi portrait"
+                },
+                {
+                    "titolo": {
+                        "it": "Deserto con due soli",
+                        "en": "Desert with two suns"
+                    },
+                    "testo": "alien desert with orange dunes and rock arches, two suns setting on the horizon, double shadows, hooded traveler leading a six-legged pack animal, violet sky, sci-fi landscape"
+                },
+                {
+                    "titolo": {
+                        "it": "Mecha tra le rovine",
+                        "en": "Mech in the ruins"
+                    },
+                    "testo": "giant olive green mech walking through city ruins, crushing rubble, smoke from a burning building, broken highway bridge, small soldiers running, overcast light, sci-fi scene, low angle"
+                },
+                {
+                    "titolo": {
+                        "it": "Laboratorio del futuro",
+                        "en": "Future laboratory"
+                    },
+                    "testo": "futuristic biology lab, white curved walls, scientist in a white coat and goggles studying a glowing green plant in a glass tank, floating holographic panels, bright clean light, sci-fi"
+                }
+            ]
+        },
+        {
+            "id": "poster",
+            "label": {
+                "it": "Poster e scritte",
+                "en": "Posters and lettering"
+            },
+            "prompt": [
+                {
+                    "titolo": {
+                        "it": "Locandina concerto jazz",
+                        "en": "Jazz concert poster"
+                    },
+                    "testo": "1960s jazz concert poster, text \"JAZZ\", silhouette of a trumpet player, orange and mustard geometric shapes, navy background, mid-century graphic design, paper texture"
+                },
+                {
+                    "titolo": {
+                        "it": "Poster di viaggio vintage",
+                        "en": "Vintage travel poster"
+                    },
+                    "testo": "vintage 1930s travel poster of a cliffside coastal town, pastel houses, lemon trees, turquoise sea, small sailboat, text \"AMALFI\", art deco lettering, lithograph style"
+                },
+                {
+                    "titolo": {
+                        "it": "Menu sulla lavagna",
+                        "en": "Chalkboard menu"
+                    },
+                    "testo": "black chalkboard menu on a brick wall in a trattoria, white chalk lettering \"MENU\", chalk drawings of a fork and a wine glass, warm lamp light, photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Copertina di romanzo",
+                        "en": "Novel cover"
+                    },
+                    "testo": "book cover, watercolor winter garden with bare trees, wrought iron gate, single red rose in the snow, elegant serif title text, lots of white space, soft pastel colors"
+                },
+                {
+                    "titolo": {
+                        "it": "Insegna al neon",
+                        "en": "Neon sign"
+                    },
+                    "testo": "pink neon sign \"OPEN\" in cursive script on a dark brick wall above a bar door, neon cocktail glass, wet pavement reflections, night photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Etichetta di vino",
+                        "en": "Wine label"
+                    },
+                    "testo": "dark green wine bottle with a cream paper label showing a line drawing of vineyard hills, elegant serif text, on a wooden barrel in a cellar, warm side light, product photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Poster di film di fantascienza",
+                        "en": "Sci-fi movie poster"
+                    },
+                    "testo": "science fiction movie poster, lone astronaut on dark rocks under a huge glowing blue ringed planet, title text \"ORBIT\", wide futuristic letters, black space, stars, cinematic"
+                },
+                {
+                    "titolo": {
+                        "it": "Biglietto di compleanno",
+                        "en": "Birthday card"
+                    },
+                    "testo": "handmade birthday card with watercolor balloons and confetti, playful brush lettering, kraft envelope, small wrapped gift with ribbon, light wooden table, top-down photo"
+                },
+                {
+                    "titolo": {
+                        "it": "Volantino della palestra",
+                        "en": "Gym flyer"
+                    },
+                    "testo": "bold gym flyer, muscular woman doing battle ropes cut out on an electric yellow background, heavy black italic text \"TRAIN\", diagonal composition, black and white accents"
+                },
+                {
+                    "titolo": {
+                        "it": "Copertina di rivista di cucina",
+                        "en": "Cooking magazine cover"
+                    },
+                    "testo": "cooking magazine cover, overhead photo of spaghetti with tomato sauce and basil, parmesan, red wine, rustic table, large red serif masthead text, clean layout, natural light"
+                }
+            ]
+        }
+    ]
+}

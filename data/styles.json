@@ -1,0 +1,545 @@
+{
+ "nota": "Stili di serie del generatore di prompt (8/10/2026). descrizione: per il modello di testo (riga STYLE). apertura: per i modelli 'foto' prende il posto del mezzo all'inizio del prompt ('A food photograph of' -> 'A watercolor painting of'); null = lo stile e' un tema e il mezzo resta. tratti: frase aggiunta in fondo per i modelli 'foto'. tag: aggiunti a SDXL e agli anime (tag_anime se diversi). fotografico: false = via obiettivi, profondita' di campo e grana. famiglie: dove ha senso. Niente nomi di marchi o di artisti.",
+ "stili": [
+  {
+   "id": "fotorealismo",
+   "nome": {
+    "it": "Fotorealismo totale",
+    "en": "Total photorealism"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl"
+   ],
+   "fotografico": true,
+   "descrizione": "a photorealistic film frame indistinguishable from reality: real people with natural skin texture, real materials, natural motivated light, true-to-life colors and real camera optics",
+   "apertura": "A photorealistic cinematic film still of",
+   "tratti": "real people with natural skin texture and pores, real materials, natural motivated light, true-to-life colors and real camera optics, indistinguishable from a real photograph",
+   "tag": "photorealistic, film still, real people, natural skin texture, natural light"
+  },
+  {
+   "id": "realistico",
+   "nome": {
+    "it": "Realistico (foto)",
+    "en": "Realistic (photo)"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl"
+   ],
+   "fotografico": true,
+   "descrizione": "a realistic photograph: true-to-life colors, natural light, real camera optics and fine natural detail",
+   "apertura": "A realistic photograph of",
+   "tratti": "natural light, true-to-life colors and fine natural detail",
+   "tag": "realistic photo, natural light, true-to-life colors"
+  },
+  {
+   "id": "cinematografico",
+   "nome": {
+    "it": "Cinematografico",
+    "en": "Cinematic"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl"
+   ],
+   "fotografico": true,
+   "descrizione": "a cinematic film still: anamorphic widescreen framing, dramatic motivated lighting, teal and orange color grade, subtle film grain",
+   "apertura": "A cinematic film still of",
+   "tratti": "anamorphic widescreen framing, dramatic lighting, a teal and orange color grade and subtle film grain",
+   "tag": "cinematic film still, anamorphic, dramatic lighting, color graded"
+  },
+  {
+   "id": "pellicola",
+   "nome": {
+    "it": "Pellicola analogica",
+    "en": "Analog film"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl"
+   ],
+   "fotografico": true,
+   "descrizione": "an analog 35mm color film photograph: soft grain, slightly faded warm colors, gentle halation around highlights",
+   "apertura": "An analog 35mm film photograph of",
+   "tratti": "shot on color film, soft grain, slightly faded warm colors and gentle halation around the highlights",
+   "tag": "analog film photo, 35mm film, film grain, faded warm colors"
+  },
+  {
+   "id": "anni70",
+   "nome": {
+    "it": "Film anni '70",
+    "en": "1970s film"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl"
+   ],
+   "fotografico": true,
+   "descrizione": "a still from a 1970s movie: warm faded colors, soft halation around the highlights, fine film grain",
+   "apertura": "A 1970s movie still of",
+   "tratti": "warm faded colors, soft halation around the highlights and the fine film grain of a 1970s movie",
+   "tag": "1970s film still, faded warm colors, film grain, halation"
+  },
+  {
+   "id": "documentario",
+   "nome": {
+    "it": "Documentario",
+    "en": "Documentary"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl"
+   ],
+   "fotografico": true,
+   "descrizione": "a candid documentary photograph: handheld camera, available light, unposed real moment",
+   "apertura": "A candid handheld documentary photograph of",
+   "tratti": "available light, an unposed real moment and natural imperfections",
+   "tag": "documentary photo, candid, handheld, available light"
+  },
+  {
+   "id": "bianconero",
+   "nome": {
+    "it": "Bianco e nero",
+    "en": "Black and white"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl",
+    "anime"
+   ],
+   "fotografico": true,
+   "descrizione": "a high-contrast black and white image: monochrome, deep blacks, bright whites, silver gelatin print look",
+   "apertura": "A black and white photograph of",
+   "tratti": "high-contrast monochrome, deep blacks and a silver gelatin print look",
+   "tag": "black and white, monochrome, high contrast",
+   "tag_anime": "monochrome, greyscale"
+  },
+  {
+   "id": "noir",
+   "nome": {
+    "it": "Film noir",
+    "en": "Film noir"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl",
+    "anime"
+   ],
+   "fotografico": true,
+   "descrizione": "a black and white film noir still: hard low-key light, deep shadows, light through venetian blinds, smoky air",
+   "apertura": "A black and white film noir still of",
+   "tratti": "hard low-key lighting, deep black shadows, stripes of light through venetian blinds and smoky air",
+   "tag": "film noir, black and white, low key lighting, hard shadows",
+   "tag_anime": "monochrome, high contrast"
+  },
+  {
+   "id": "cartoon",
+   "nome": {
+    "it": "Cartoon",
+    "en": "Cartoon"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl"
+   ],
+   "fotografico": false,
+   "descrizione": "a cartoon illustration: bold clean outlines, flat bright colors, simple shapes, playful exaggerated proportions",
+   "apertura": "A cartoon illustration of",
+   "tratti": "bold clean outlines, flat bright colors, simple shapes and playful exaggerated proportions",
+   "tag": "cartoon illustration, flat colors, bold outlines"
+  },
+  {
+   "id": "animazione2d",
+   "nome": {
+    "it": "Animazione 2D classica",
+    "en": "Classic 2D animation"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl"
+   ],
+   "fotografico": false,
+   "descrizione": "a frame of a classic hand-drawn 2D animated feature: clean ink outlines, flat cel colors, painted backgrounds",
+   "apertura": "A classic hand-drawn 2D animation frame of",
+   "tratti": "clean ink outlines, flat cel-painted colors and soft painted backgrounds",
+   "tag": "2d animation, hand-drawn, cel shading, painted background"
+  },
+  {
+   "id": "anime",
+   "nome": {
+    "it": "Anime",
+    "en": "Anime"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl"
+   ],
+   "fotografico": false,
+   "descrizione": "a Japanese anime illustration: clean line art, cel shading, vivid colors, expressive eyes, painted backgrounds",
+   "apertura": "An anime illustration of",
+   "tratti": "clean line art, cel shading, vivid colors and a softly painted background",
+   "tag": "anime style, cel shading, clean line art"
+  },
+  {
+   "id": "fumetto",
+   "nome": {
+    "it": "Fumetto",
+    "en": "Comic book"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl",
+    "anime"
+   ],
+   "fotografico": false,
+   "descrizione": "a comic book panel: bold black ink lines, halftone dot shading, saturated flat colors, dynamic composition",
+   "apertura": "A comic book panel of",
+   "tratti": "bold black ink lines, halftone dot shading and saturated flat colors",
+   "tag": "comic book style, ink lines, halftone shading",
+   "tag_anime": "comic, halftone, bold lineart"
+  },
+  {
+   "id": "graphicnovel",
+   "nome": {
+    "it": "Graphic novel",
+    "en": "Graphic novel"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl",
+    "anime"
+   ],
+   "fotografico": false,
+   "descrizione": "a graphic novel panel: confident inked linework, a muted limited palette, dramatic shadows, textured paper",
+   "apertura": "A graphic novel panel of",
+   "tratti": "confident inked linework, a muted limited color palette, dramatic shadows and textured paper",
+   "tag": "graphic novel, ink lines, muted palette, dramatic shadows"
+  },
+  {
+   "id": "pixelart",
+   "nome": {
+    "it": "Pixel art",
+    "en": "Pixel art"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl",
+    "anime"
+   ],
+   "fotografico": false,
+   "descrizione": "pixel art: low-resolution square pixels, a limited 16-color palette, crisp hard edges, retro 16-bit video game look",
+   "apertura": "A pixel art image of",
+   "tratti": "made of low-resolution square pixels with a limited 16-color palette and crisp hard edges, like a retro 16-bit video game",
+   "tag": "pixel art, 16-bit, limited palette, retro game",
+   "tag_anime": "pixel art"
+  },
+  {
+   "id": "acquerello",
+   "nome": {
+    "it": "Acquerello",
+    "en": "Watercolor"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl",
+    "anime"
+   ],
+   "fotografico": false,
+   "descrizione": "a watercolor painting: transparent layered washes, soft bleeding edges, visible cold-press paper texture, loose brush strokes, white paper showing through",
+   "apertura": "A watercolor painting of",
+   "tratti": "transparent layered washes, soft bleeding edges, loose brush strokes and visible cold-press paper texture",
+   "tag": "watercolor painting, soft edges, paper texture",
+   "tag_anime": "watercolor (medium), traditional media"
+  },
+  {
+   "id": "olio",
+   "nome": {
+    "it": "Pittura a olio",
+    "en": "Oil painting"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl",
+    "anime"
+   ],
+   "fotografico": false,
+   "descrizione": "an oil painting: thick impasto brush strokes, rich layered colors, visible canvas texture, classical painterly light",
+   "apertura": "An oil painting of",
+   "tratti": "thick impasto brush strokes, rich layered colors, visible canvas texture and classical painterly light",
+   "tag": "oil painting, impasto, canvas texture",
+   "tag_anime": "oil painting (medium), traditional media"
+  },
+  {
+   "id": "matita",
+   "nome": {
+    "it": "Matita",
+    "en": "Pencil sketch"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl",
+    "anime"
+   ],
+   "fotografico": false,
+   "descrizione": "a graphite pencil sketch: fine hatching and cross-hatching, soft shading, rough construction lines, grey on white paper",
+   "apertura": "A graphite pencil sketch of",
+   "tratti": "fine hatching and cross-hatching, soft graphite shading and rough sketch lines in grey on white paper",
+   "tag": "pencil sketch, graphite, hatching, monochrome",
+   "tag_anime": "sketch, graphite (medium), greyscale, traditional media"
+  },
+  {
+   "id": "storyboard",
+   "nome": {
+    "it": "Storyboard a matita",
+    "en": "Pencil storyboard"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl",
+    "anime"
+   ],
+   "fotografico": false,
+   "descrizione": "a hand-drawn film storyboard panel: loose graphite lines, grey pencil shading, no color, white paper",
+   "apertura": "A hand-drawn film storyboard panel of",
+   "tratti": "loose confident graphite lines, grey pencil shading for light and shadow, no color at all, white paper",
+   "tag": "storyboard sketch, pencil, monochrome, white paper",
+   "tag_anime": "sketch, monochrome, greyscale"
+  },
+  {
+   "id": "favola",
+   "nome": {
+    "it": "Libro di fiabe",
+    "en": "Fairy-tale book"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl",
+    "anime"
+   ],
+   "fotografico": false,
+   "descrizione": "an illustration from a classic fairy-tale storybook: soft gouache and colored pencil on textured paper, warm muted colors, gentle rounded shapes",
+   "apertura": "A fairy-tale storybook illustration of",
+   "tratti": "soft gouache and colored pencil on textured paper, warm muted colors and gentle rounded shapes",
+   "tag": "storybook illustration, gouache, colored pencil, whimsical"
+  },
+  {
+   "id": "videogioco",
+   "nome": {
+    "it": "Videogioco 3D",
+    "en": "3D video game"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl"
+   ],
+   "fotografico": false,
+   "descrizione": "a modern 3D video game screenshot: real-time game engine render, stylized physically based materials, dramatic game lighting, third-person game camera",
+   "apertura": "A 3D video game screenshot of",
+   "tratti": "a real-time game engine render with stylized materials, dramatic game lighting and a third-person game camera",
+   "tag": "3d video game screenshot, game engine render, stylized materials"
+  },
+  {
+   "id": "animazione3d",
+   "nome": {
+    "it": "Film d'animazione 3D",
+    "en": "3D animated film"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl"
+   ],
+   "fotografico": false,
+   "descrizione": "a still from a 3D animated family film: soft rounded stylized characters with big expressive eyes, subsurface skin, warm cinematic lighting",
+   "apertura": "A 3D animated film still of",
+   "tratti": "soft rounded stylized characters with big expressive eyes, smooth subsurface skin and warm cinematic lighting",
+   "tag": "3d animation, stylized characters, soft lighting, cute"
+  },
+  {
+   "id": "lowpoly",
+   "nome": {
+    "it": "Low poly",
+    "en": "Low poly"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl"
+   ],
+   "fotografico": false,
+   "descrizione": "a low poly 3D render: flat-shaded triangular facets, simple geometric shapes, soft pastel colors, clean minimal background",
+   "apertura": "A low poly 3D render of",
+   "tratti": "flat-shaded triangular facets, simple geometric shapes and soft pastel colors",
+   "tag": "low poly, flat shading, geometric, pastel colors"
+  },
+  {
+   "id": "isometrico",
+   "nome": {
+    "it": "Isometrico",
+    "en": "Isometric"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl",
+    "anime"
+   ],
+   "fotografico": false,
+   "descrizione": "an isometric 3D illustration: isometric view from above, a clean miniature diorama, soft shadows, tidy detailed shapes",
+   "apertura": "An isometric 3D illustration of",
+   "tratti": "seen in isometric view from above as a clean miniature diorama with soft shadows",
+   "tag": "isometric view, miniature diorama, soft shadows",
+   "tag_anime": "isometric, diorama"
+  },
+  {
+   "id": "plastilina",
+   "nome": {
+    "it": "Plastilina (claymation)",
+    "en": "Claymation"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl"
+   ],
+   "fotografico": false,
+   "descrizione": "a claymation stop-motion scene: everything made of colorful modeling clay, visible fingerprints and tool marks, miniature handmade set, soft studio light",
+   "apertura": "A claymation stop-motion scene of",
+   "tratti": "everything is made of colorful modeling clay with visible fingerprints and tool marks, on a miniature handmade set under soft studio light",
+   "tag": "claymation, plasticine, stop motion, handmade miniature"
+  },
+  {
+   "id": "origami",
+   "nome": {
+    "it": "Origami e carta",
+    "en": "Origami and paper"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl"
+   ],
+   "fotografico": false,
+   "descrizione": "a paper craft scene: everything made of folded origami paper and layered cut paper, crisp folds, matte paper texture, soft shadows between the layers",
+   "apertura": "A paper craft scene of",
+   "tratti": "everything is made of folded origami paper and layered cut paper, with crisp folds, matte paper texture and soft shadows between the layers",
+   "tag": "origami, paper craft, layered cut paper"
+  },
+  {
+   "id": "vetrata",
+   "nome": {
+    "it": "Vetrata",
+    "en": "Stained glass"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl",
+    "anime"
+   ],
+   "fotografico": false,
+   "descrizione": "a stained glass window: bright pieces of colored glass, thick dark lead lines, light shining through",
+   "apertura": "A stained glass window depicting",
+   "tratti": "made of bright pieces of colored glass with thick dark lead lines and light shining through",
+   "tag": "stained glass, lead lines, glowing colors",
+   "tag_anime": "stained glass"
+  },
+  {
+   "id": "ukiyoe",
+   "nome": {
+    "it": "Stampa giapponese (ukiyo-e)",
+    "en": "Japanese woodblock (ukiyo-e)"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl",
+    "anime"
+   ],
+   "fotografico": false,
+   "descrizione": "a traditional Japanese ukiyo-e woodblock print: flat colors, bold outlines, traditional patterns, textured washi paper, muted indigo and vermilion",
+   "apertura": "A Japanese ukiyo-e woodblock print of",
+   "tratti": "flat colors, bold outlines, traditional patterns and textured washi paper in muted indigo and vermilion",
+   "tag": "ukiyo-e, woodblock print, flat colors",
+   "tag_anime": "ukiyo-e"
+  },
+  {
+   "id": "artdeco",
+   "nome": {
+    "it": "Art déco",
+    "en": "Art deco"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl"
+   ],
+   "fotografico": false,
+   "descrizione": "an art deco poster illustration: geometric shapes, elegant symmetry, gold and black with jewel tones, streamlined forms",
+   "apertura": "An art deco poster illustration of",
+   "tratti": "geometric shapes, elegant symmetry, streamlined forms and gold and black with jewel tones",
+   "tag": "art deco, geometric, gold accents, symmetry"
+  },
+  {
+   "id": "pitturafantasy",
+   "nome": {
+    "it": "Pittura digitale fantasy",
+    "en": "Fantasy digital painting"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl"
+   ],
+   "fotografico": false,
+   "descrizione": "a digital fantasy painting: painterly brushwork, epic lighting, rich saturated colors, detailed concept art look",
+   "apertura": "A digital fantasy painting of",
+   "tratti": "painterly brushwork, epic lighting and rich saturated colors, like detailed concept art",
+   "tag": "digital painting, fantasy art, concept art, painterly"
+  },
+  {
+   "id": "vintage50",
+   "nome": {
+    "it": "Vintage anni '50",
+    "en": "1950s vintage"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl"
+   ],
+   "fotografico": false,
+   "descrizione": "a 1950s vintage illustration: retro advertising art, warm faded colors, halftone print texture, cheerful mid-century style",
+   "apertura": "A 1950s vintage illustration of",
+   "tratti": "retro advertising art with warm faded colors, halftone print texture and a cheerful mid-century style",
+   "tag": "1950s vintage illustration, retro advertising art, halftone"
+  },
+  {
+   "id": "steampunk",
+   "nome": {
+    "it": "Steampunk",
+    "en": "Steampunk"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl",
+    "anime"
+   ],
+   "fotografico": true,
+   "descrizione": "a steampunk world: brass gears, copper pipes and rivets, Victorian clothing and architecture, warm gaslight and steam",
+   "apertura": null,
+   "tratti": "a steampunk world of brass gears, copper pipes and rivets, Victorian details, warm gaslight and drifting steam",
+   "tag": "steampunk, brass gears, copper pipes, victorian",
+   "tag_anime": "steampunk, gears"
+  },
+  {
+   "id": "neon",
+   "nome": {
+    "it": "Neon notturno",
+    "en": "Neon night"
+   },
+   "famiglie": [
+    "photo",
+    "sdxl",
+    "anime"
+   ],
+   "fotografico": true,
+   "descrizione": "a neon-lit night: glowing pink and cyan neon lights, dark atmosphere, wet reflective surfaces",
+   "apertura": null,
+   "tratti": "at night, lit by glowing pink and cyan neon lights with dark shadows and wet reflections",
+   "tag": "neon lights, pink and cyan, night, wet reflections",
+   "tag_anime": "neon lights, night, reflections"
+  }
+ ]
+}

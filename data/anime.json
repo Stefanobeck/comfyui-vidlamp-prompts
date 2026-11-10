@@ -1,0 +1,481 @@
+{
+    "family": "anime",
+    "nota": "Prompt pronti per i modelli anime (Anima, NetaYume Lumina): tag Danbooru in minuscolo con gli spazi, prima il conteggio (1girl, 1boy, no humans), poi aspetto, posa, luogo, luce; in fondo una o due frasi. Sempre adatti a tutti. Niente tag di qualita': per Anima li mette l'app dal meta.json (prompt_pronti.prefisso). Scritti l'8/10/2026 seguendo le guide di Anima e NetaYume.",
+    "categorie": [
+        {
+            "id": "personaggi",
+            "label": {
+                "it": "Personaggi",
+                "en": "Characters"
+            },
+            "prompt": [
+                {
+                    "titolo": {
+                        "it": "Ragazza samurai",
+                        "en": "Samurai girl"
+                    },
+                    "testo": "1girl, solo, samurai, long black hair, high ponytail, red eyes, white and red kimono, katana at her side, standing under cherry blossom trees, falling petals, soft sunlight, looking at viewer, full body. A calm young samurai waits beneath the blossoms as petals drift in the breeze."
+                },
+                {
+                    "titolo": {
+                        "it": "Studente con le cuffie",
+                        "en": "Student with headphones"
+                    },
+                    "testo": "1boy, solo, short messy brown hair, green eyes, school uniform, open blazer, headphones around neck, hands in pockets, school rooftop, chain-link fence, blue sky, summer clouds, wind, upper body. A relaxed student enjoys the breeze on the school rooftop after class."
+                },
+                {
+                    "titolo": {
+                        "it": "Maga con il gatto",
+                        "en": "Witch with a cat"
+                    },
+                    "testo": "1girl, solo, witch, long silver hair, purple eyes, large pointy hat, dark blue cloak, black cat on her shoulder, holding a glowing staff, night sky, full moon, stars, looking at viewer, cowboy shot. A young witch smiles under the full moon while her cat watches the stars."
+                },
+                {
+                    "titolo": {
+                        "it": "Cavaliere in armatura",
+                        "en": "Armored knight"
+                    },
+                    "testo": "1girl, solo, knight, short blonde hair, blue eyes, silver plate armor, blue cape, holding a longsword, castle courtyard, banners, morning light, determined expression, full body. A young knight stands ready in the castle courtyard at dawn."
+                },
+                {
+                    "titolo": {
+                        "it": "Cameriera del caffè",
+                        "en": "Café waitress"
+                    },
+                    "testo": "1girl, solo, brown bob hair, amber eyes, cafe uniform, white apron, holding a tray with coffee cups, smiling, cozy cafe interior, wooden counter, warm light, potted plants, upper body. A cheerful waitress brings coffee to the tables of a small cozy café."
+                },
+                {
+                    "titolo": {
+                        "it": "Pilota spaziale",
+                        "en": "Space pilot"
+                    },
+                    "testo": "1boy, solo, spiky black hair, yellow eyes, white pilot suit, holding a helmet under arm, spaceship hangar, glowing control panels, confident smile, upper body. A young pilot gets ready for launch in the bright hangar of a space carrier."
+                },
+                {
+                    "titolo": {
+                        "it": "Principessa del ghiaccio",
+                        "en": "Ice princess"
+                    },
+                    "testo": "1girl, solo, long light blue hair, ice crown, pale blue eyes, white and blue dress, snowflakes, ice palace, crystal pillars, cold light, gentle expression, full body. A quiet princess walks through her shimmering palace of ice."
+                },
+                {
+                    "titolo": {
+                        "it": "Detective sotto la pioggia",
+                        "en": "Detective in the rain"
+                    },
+                    "testo": "1boy, solo, black hair, grey eyes, long beige trench coat, holding a black umbrella, night city street, rain, neon signs, reflections on wet ground, serious expression, cowboy shot. A quiet detective follows a lead through the rainy neon streets."
+                },
+                {
+                    "titolo": {
+                        "it": "Arciera elfa",
+                        "en": "Elf archer"
+                    },
+                    "testo": "1girl, solo, elf, pointy ears, long green hair, golden eyes, leaf-patterned tunic, holding a bow, quiver, forest, sunbeams, fallen leaves, alert expression, full body. A sharp-eyed elf archer listens to the forest around her."
+                },
+                {
+                    "titolo": {
+                        "it": "Fratelli in festa",
+                        "en": "Siblings at the festival"
+                    },
+                    "testo": "1boy, 1girl, siblings, yukata, girl holding a candy apple, boy holding a paper fan, summer festival, paper lanterns, food stalls, fireworks in the night sky, smiling, upper body. A brother and sister enjoy the fireworks at a summer festival."
+                }
+            ],
+            "componi": "characters"
+        },
+        {
+            "id": "quotidiano",
+            "label": {
+                "it": "Vita quotidiana",
+                "en": "Slice of life"
+            },
+            "prompt": [
+                {
+                    "titolo": {
+                        "it": "Lettura sul treno",
+                        "en": "Reading on the train"
+                    },
+                    "testo": "1boy, solo, black messy hair, glasses, school uniform, reading a book, sitting by the window, night train, city lights outside, reflection on the glass, warm interior light, calm expression, upper body. A quiet student is lost in his book while the night city slides past."
+                },
+                {
+                    "titolo": {
+                        "it": "Pioggia alla fermata",
+                        "en": "Rain at the bus stop"
+                    },
+                    "testo": "1girl, solo, short black hair, yellow raincoat, red umbrella, bus stop, heavy rain, puddles, countryside road, green rice fields, grey sky, looking up, full body. A girl waits for the bus as summer rain falls over the fields."
+                },
+                {
+                    "titolo": {
+                        "it": "Studio di sera",
+                        "en": "Studying at night"
+                    },
+                    "testo": "1girl, solo, long brown hair, hoodie, studying at a desk, desk lamp, notebooks, cup of tea, cat sleeping on the desk, window, night city, cozy room, side view. A tired student studies late while her cat sleeps beside the lamp."
+                },
+                {
+                    "titolo": {
+                        "it": "Pranzo sul tetto",
+                        "en": "Rooftop lunch"
+                    },
+                    "testo": "2girls, school uniforms, sitting on a school rooftop, sharing bento boxes, chopsticks, laughing, blue sky, white clouds, summer, wind in hair, full body. Two friends share their lunch and jokes on the sunny school rooftop."
+                },
+                {
+                    "titolo": {
+                        "it": "Bottega del fornaio",
+                        "en": "Bakery shop"
+                    },
+                    "testo": "1girl, solo, braided red hair, white apron, holding a tray of fresh bread, bakery interior, shelves of croissants and loaves, morning sunlight through the window, warm colors, smiling, upper body. A young baker proudly shows the first bread of the morning."
+                },
+                {
+                    "titolo": {
+                        "it": "Giro in bicicletta",
+                        "en": "Bike ride"
+                    },
+                    "testo": "1boy, solo, short brown hair, white t-shirt, riding a bicycle, seaside road, summer, blue sea, white clouds, wind, motion blur background, smiling, full body. A boy rides his bike along the sea road on a bright summer afternoon."
+                },
+                {
+                    "titolo": {
+                        "it": "Lavanderia di notte",
+                        "en": "Laundromat at night"
+                    },
+                    "testo": "1girl, solo, oversized sweater, short purple hair, sitting on a bench, laundromat, washing machines, fluorescent light, night, reading a magazine, quiet atmosphere, full body. A girl waits for her laundry in an empty laundromat late at night."
+                },
+                {
+                    "titolo": {
+                        "it": "Giardiniere sul balcone",
+                        "en": "Balcony gardener"
+                    },
+                    "testo": "1boy, solo, grey hair, old man, straw hat, watering potted plants, apartment balcony, tomatoes and flowers, morning sun, city rooftops in background, gentle smile, upper body. An old man waters his small balcony garden at sunrise."
+                },
+                {
+                    "titolo": {
+                        "it": "Neve dal finestrino",
+                        "en": "Snow by the window"
+                    },
+                    "testo": "1girl, solo, long black hair, red scarf, sitting by a window, holding a warm mug, snow falling outside, winter, cozy room, fairy lights, soft light, peaceful expression, upper body. A girl warms her hands on a mug while the first snow falls."
+                },
+                {
+                    "titolo": {
+                        "it": "Gatti al sole",
+                        "en": "Cats in the sun"
+                    },
+                    "testo": "no humans, three cats, sleeping on a wooden porch, afternoon sunlight, potted plants, wind chime, japanese house, summer, warm colors. Three cats nap together in a warm patch of sunlight on the old porch."
+                }
+            ]
+        },
+        {
+            "id": "fantasy",
+            "label": {
+                "it": "Fantasy",
+                "en": "Fantasy"
+            },
+            "prompt": [
+                {
+                    "titolo": {
+                        "it": "Gatto mago",
+                        "en": "Wizard cat"
+                    },
+                    "testo": "no humans, cat, wizard hat, purple robe, magic wand, glowing runes, library, bookshelves, floating books, candlelight, watercolor (medium), cozy. A small grey cat in a wizard hat casts a sparkling spell among towering shelves of old books."
+                },
+                {
+                    "titolo": {
+                        "it": "Drago e ragazza",
+                        "en": "Girl and dragon"
+                    },
+                    "testo": "1girl, dragon, long red hair, green dress, standing on a cliff, large white dragon behind her, wings spread, clouds, sunset, wind, full body. A girl and her white dragon watch the sunset from a high cliff."
+                },
+                {
+                    "titolo": {
+                        "it": "Foresta degli spiriti",
+                        "en": "Spirit forest"
+                    },
+                    "testo": "1girl, solo, white dress, barefoot, walking in a forest, glowing spirits, small floating lights, giant trees, moss, night, blue and green light, wonder, full body. A girl walks among gentle glowing spirits in an ancient forest."
+                },
+                {
+                    "titolo": {
+                        "it": "Castello sul lago",
+                        "en": "Castle on the lake"
+                    },
+                    "testo": "no humans, fantasy castle, white towers, blue roofs, on an island in a lake, mountains, waterfalls, sunrise, birds, reflections, scenery. A fairy-tale castle rises from a still lake at sunrise."
+                },
+                {
+                    "titolo": {
+                        "it": "Alchimista",
+                        "en": "Alchemist"
+                    },
+                    "testo": "1boy, solo, alchemist, glasses, messy white hair, long coat, holding a glowing flask, laboratory, potions, bubbling liquids, books, candles, green glow, focused, upper body. A young alchemist watches a potion glow green in his cluttered workshop."
+                },
+                {
+                    "titolo": {
+                        "it": "Volpe a nove code",
+                        "en": "Nine-tailed fox"
+                    },
+                    "testo": "1girl, solo, fox ears, nine fox tails, white hair, golden eyes, shrine maiden outfit, torii gate, autumn leaves, lanterns, evening, mysterious smile, full body. A fox spirit waits at the shrine gate as the autumn evening falls."
+                },
+                {
+                    "titolo": {
+                        "it": "Nave volante",
+                        "en": "Flying ship"
+                    },
+                    "testo": "no humans, flying ship, wooden hull, large sails, propellers, sky, clouds, sunset, floating islands, birds, epic scenery. A wooden airship sails between floating islands in a golden sunset sky."
+                },
+                {
+                    "titolo": {
+                        "it": "Paladino e lupo",
+                        "en": "Paladin and wolf"
+                    },
+                    "testo": "1boy, solo, paladin, silver armor, white cape, blonde hair, standing beside a large white wolf, snowy mountains, falling snow, cold light, determined, full body. A paladin and his loyal white wolf cross the snowy mountains."
+                },
+                {
+                    "titolo": {
+                        "it": "Fata dei fiori",
+                        "en": "Flower fairy"
+                    },
+                    "testo": "1girl, solo, fairy, tiny, translucent wings, pink hair, flower petal dress, sitting on a mushroom, flowers, dewdrops, morning light, macro view, smiling. A tiny flower fairy greets the morning from her mushroom seat."
+                },
+                {
+                    "titolo": {
+                        "it": "Torre della strega",
+                        "en": "Witch's tower"
+                    },
+                    "testo": "no humans, crooked tower, witch's house, purple roof, glowing windows, full moon, bats, pumpkin patch, dark forest, night, cozy halloween atmosphere, scenery. A crooked witch's tower glows warmly under the full moon."
+                }
+            ]
+        },
+        {
+            "id": "fantascienza",
+            "label": {
+                "it": "Fantascienza",
+                "en": "Science fiction"
+            },
+            "prompt": [
+                {
+                    "titolo": {
+                        "it": "Hacker nella città al neon",
+                        "en": "Neon city hacker"
+                    },
+                    "testo": "1girl, solo, cyberpunk, short pink hair, visor, black jacket with glowing lines, holding a holographic screen, neon city, rain, night, reflections, cyan and magenta light, upper body. A young hacker reads glowing data in the rain of the neon city."
+                },
+                {
+                    "titolo": {
+                        "it": "Robot e bambina",
+                        "en": "Robot and child"
+                    },
+                    "testo": "1girl, robot, child, short brown hair, holding hands with a large old robot, rusty metal, field of flowers, sunset, warm light, gentle atmosphere, full body. A little girl walks hand in hand with an old giant robot through a field of flowers."
+                },
+                {
+                    "titolo": {
+                        "it": "Pilota di mecha",
+                        "en": "Mecha pilot"
+                    },
+                    "testo": "1boy, solo, mecha pilot, plugsuit, black hair, sitting in a cockpit, glowing screens, holographic displays, focused expression, blue light, upper body. A young pilot grips the controls inside his mecha before battle."
+                },
+                {
+                    "titolo": {
+                        "it": "Stazione orbitale",
+                        "en": "Orbital station"
+                    },
+                    "testo": "1girl, solo, astronaut, white spacesuit, floating, space station window, earth below, stars, zero gravity, hair floating, peaceful expression, upper body. An astronaut floats by the window and looks down at the blue earth."
+                },
+                {
+                    "titolo": {
+                        "it": "Città del futuro",
+                        "en": "Future city"
+                    },
+                    "testo": "no humans, futuristic city, tall white towers, green gardens on rooftops, flying vehicles, monorail, blue sky, clouds, bright daylight, utopian scenery. A clean utopian city of white towers and hanging gardens under a bright sky."
+                },
+                {
+                    "titolo": {
+                        "it": "Androide che legge",
+                        "en": "Android reading"
+                    },
+                    "testo": "1girl, solo, android, mechanical joints, white hair, blue eyes, sitting in a library, reading a book, sunlight through windows, dust particles, calm expression, upper body. A quiet android reads a paper book in an old library full of sunlight."
+                },
+                {
+                    "titolo": {
+                        "it": "Corsa in moto",
+                        "en": "Motorbike chase"
+                    },
+                    "testo": "1boy, solo, riding a futuristic motorcycle, red jacket, goggles, speed lines, highway at night, neon city, light trails, dynamic angle, full body. A rider races his futuristic motorcycle down the glowing highway."
+                },
+                {
+                    "titolo": {
+                        "it": "Pianeta alieno",
+                        "en": "Alien planet"
+                    },
+                    "testo": "1girl, solo, explorer, spacesuit, helmet, standing on an alien planet, giant glowing plants, two moons, purple sky, mist, full body, from behind. An explorer stands in wonder before a forest of glowing alien plants."
+                },
+                {
+                    "titolo": {
+                        "it": "Laboratorio segreto",
+                        "en": "Secret laboratory"
+                    },
+                    "testo": "1boy, solo, scientist, lab coat, white hair, glasses, holographic dna, glowing tanks, laboratory, blue light, serious expression, upper body. A young scientist studies a glowing hologram in a secret laboratory."
+                },
+                {
+                    "titolo": {
+                        "it": "Hangar delle astronavi",
+                        "en": "Starship hangar"
+                    },
+                    "testo": "no humans, spaceship hangar, sleek white starships, mechanics robots, floodlights, open bay doors, stars outside, sci-fi scenery, wide shot. A busy hangar where white starships wait for their next mission."
+                }
+            ]
+        },
+        {
+            "id": "scenari",
+            "label": {
+                "it": "Scenari",
+                "en": "Scenery"
+            },
+            "prompt": [
+                {
+                    "titolo": {
+                        "it": "Strada di campagna d'estate",
+                        "en": "Summer country road"
+                    },
+                    "testo": "no humans, scenery, country road, rice fields, telephone poles, cumulonimbus clouds, blue sky, summer, cicadas, bright sunlight, vivid colors. A quiet country road crosses green rice fields under huge summer clouds."
+                },
+                {
+                    "titolo": {
+                        "it": "Città dopo la pioggia",
+                        "en": "City after the rain"
+                    },
+                    "testo": "no humans, scenery, city street, after rain, puddles, reflections, evening, sunset, power lines, convenience store light, warm and blue tones. The city street shines with reflections as the sun sets after the rain."
+                },
+                {
+                    "titolo": {
+                        "it": "Santuario nella neve",
+                        "en": "Shrine in the snow"
+                    },
+                    "testo": "no humans, scenery, shinto shrine, red torii gate, snow, stone lanterns, pine trees, winter, quiet, soft light. A red torii gate stands silent in a shrine covered with fresh snow."
+                },
+                {
+                    "titolo": {
+                        "it": "Treno sul mare",
+                        "en": "Train over the sea"
+                    },
+                    "testo": "no humans, scenery, train, railway on water, shallow sea, clouds, blue sky, reflection, summer, horizon, peaceful. A small train glides along tracks laid across a calm shallow sea."
+                },
+                {
+                    "titolo": {
+                        "it": "Ciliegi al fiume",
+                        "en": "Cherry trees by the river"
+                    },
+                    "testo": "no humans, scenery, cherry blossoms, river, stone bridge, falling petals, spring, sunlight, pink and blue colors. Cherry trees in full bloom lean over a quiet river in spring."
+                },
+                {
+                    "titolo": {
+                        "it": "Cielo stellato in montagna",
+                        "en": "Starry mountain sky"
+                    },
+                    "testo": "no humans, scenery, starry sky, milky way, mountains, lake, reflection, tent, campfire, night, purple and blue. The milky way shines over a mountain lake beside a small glowing campfire."
+                },
+                {
+                    "titolo": {
+                        "it": "Vicolo con le lanterne",
+                        "en": "Lantern alley"
+                    },
+                    "testo": "no humans, scenery, narrow alley, red paper lanterns, wooden houses, stone steps, night, warm light, mist. Red lanterns light a narrow old alley with wooden houses at night."
+                },
+                {
+                    "titolo": {
+                        "it": "Faro all'alba",
+                        "en": "Lighthouse at dawn"
+                    },
+                    "testo": "no humans, scenery, lighthouse, cliff, ocean, waves, dawn, pink sky, seagulls, grass, wind. A white lighthouse stands on a grassy cliff as the dawn turns the sky pink."
+                },
+                {
+                    "titolo": {
+                        "it": "Biblioteca abbandonata",
+                        "en": "Abandoned library"
+                    },
+                    "testo": "no humans, scenery, abandoned library, overgrown, plants, broken ceiling, sunlight beams, floating dust, bookshelves, quiet atmosphere. Sunlight falls through a broken ceiling into a library taken over by plants."
+                },
+                {
+                    "titolo": {
+                        "it": "Mercato d'autunno",
+                        "en": "Autumn market"
+                    },
+                    "testo": "no humans, scenery, market street, autumn, orange leaves, food stalls, steam, paper lanterns, evening, warm colors. An autumn market street glows with lanterns and steam from the food stalls."
+                }
+            ]
+        },
+        {
+            "id": "azione",
+            "label": {
+                "it": "Azione",
+                "en": "Action"
+            },
+            "prompt": [
+                {
+                    "titolo": {
+                        "it": "Duello di spade",
+                        "en": "Sword duel"
+                    },
+                    "testo": "2boys, sword fight, katanas, clashing swords, sparks, bamboo forest, falling leaves, wind, dynamic pose, motion lines, intense expressions. Two swordsmen clash in a storm of leaves in the bamboo forest."
+                },
+                {
+                    "titolo": {
+                        "it": "Salto sui tetti",
+                        "en": "Rooftop leap"
+                    },
+                    "testo": "1girl, solo, ninja, black outfit, red scarf, jumping between rooftops, night city, full moon, dynamic angle, from below, motion blur. A young ninja leaps across the rooftops under the full moon."
+                },
+                {
+                    "titolo": {
+                        "it": "Incantesimo di fuoco",
+                        "en": "Fire spell"
+                    },
+                    "testo": "1girl, solo, mage, red hair, casting a fire spell, flames, magic circle, dark battlefield, sparks, dynamic pose, glowing eyes, full body. A young mage unleashes a blazing fire spell inside a glowing magic circle."
+                },
+                {
+                    "titolo": {
+                        "it": "Partita di calcio",
+                        "en": "Football match"
+                    },
+                    "testo": "1boy, solo, soccer uniform, kicking a ball, stadium, grass field, crowd, sunlight, sweat, dynamic angle, motion lines, determined expression, full body. A striker kicks the ball with all his strength in a packed stadium."
+                },
+                {
+                    "titolo": {
+                        "it": "Fuga in skate",
+                        "en": "Skateboard escape"
+                    },
+                    "testo": "1girl, solo, skateboard, hoodie, short blue hair, jumping, city street, graffiti, sunset, dynamic angle, wind, smile, full body. A girl jumps her skateboard over a curb in a street full of graffiti."
+                },
+                {
+                    "titolo": {
+                        "it": "Battaglia contro il drago",
+                        "en": "Battle with the dragon"
+                    },
+                    "testo": "1boy, knight, giant black dragon, battle, holding a glowing sword, fire, castle ruins, dark clouds, dynamic angle, epic scale. A lone knight raises his glowing sword against a giant black dragon."
+                },
+                {
+                    "titolo": {
+                        "it": "Corsa tra i fiori",
+                        "en": "Running through flowers"
+                    },
+                    "testo": "1girl, solo, white dress, running, flower field, sunflowers, blue sky, wind, hair flowing, smiling, motion blur, full body. A girl runs laughing through a field of tall sunflowers."
+                },
+                {
+                    "titolo": {
+                        "it": "Robot gigante in città",
+                        "en": "Giant robot in the city"
+                    },
+                    "testo": "no humans, giant robot, mecha, city, explosions, smoke, flying debris, sunset, dynamic angle, from below, epic scale. A giant robot strides through the burning city at sunset."
+                },
+                {
+                    "titolo": {
+                        "it": "Gara di cavalli",
+                        "en": "Horse race"
+                    },
+                    "testo": "1girl, solo, riding a horse, galloping, braided hair, riding outfit, open field, dust, sunset, motion lines, dynamic angle, full body. A young rider gallops across the open field at sunset."
+                },
+                {
+                    "titolo": {
+                        "it": "Inseguimento sotto la pioggia",
+                        "en": "Chase in the rain"
+                    },
+                    "testo": "1boy, solo, running, city street, rain, night, neon lights, splashes, wet hair, jacket, dynamic angle, motion blur, full body. A young man sprints through the rainy neon streets, splashing through the puddles."
+                }
+            ]
+        }
+    ]
+}

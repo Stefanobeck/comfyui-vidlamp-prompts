@@ -1,0 +1,827 @@
+{
+  "nota": "Pieces for the random characters of the 'Characters' category of the ready prompts (vidlamp/random_characters.py, 8/10/2026, user's idea): the die puts the pieces together, thousands of combinations without the text model. People are always adults (20 and over), never real or famous people, varied in origin, age and body; creatures without blood or gore. Photo phrases are reused for SDXL (shorter), anime has its own Danbooru tags.",
+  "eta": [
+    [
+      20,
+      29,
+      3
+    ],
+    [
+      30,
+      39,
+      3
+    ],
+    [
+      40,
+      49,
+      2.5
+    ],
+    [
+      50,
+      59,
+      2
+    ],
+    [
+      60,
+      69,
+      1.5
+    ],
+    [
+      70,
+      79,
+      1
+    ],
+    [
+      80,
+      89,
+      0.5
+    ]
+  ],
+  "decenni": {
+    "2": "twenties",
+    "3": "thirties",
+    "4": "forties",
+    "5": "fifties",
+    "6": "sixties",
+    "7": "seventies",
+    "8": "eighties"
+  },
+  "origini": [
+    "Nigerian",
+    "Japanese",
+    "Norwegian",
+    "Peruvian",
+    "Indian",
+    "Lebanese",
+    "Italian",
+    "Korean",
+    "Ethiopian",
+    "Brazilian",
+    "Mexican",
+    "Irish",
+    "Vietnamese",
+    "Moroccan",
+    "Samoan",
+    "Mongolian",
+    "Scottish",
+    "Filipino",
+    "Ghanaian",
+    "Turkish",
+    "Polish",
+    "Chilean",
+    "Greek",
+    "Iranian",
+    "Thai",
+    "Kenyan",
+    "Cuban",
+    "Inuit",
+    "Maori",
+    "Egyptian",
+    "Sri Lankan",
+    "Ukrainian",
+    "Senegalese",
+    "Colombian",
+    "Chinese",
+    "Indonesian",
+    "Jamaican",
+    "Spanish",
+    "Pakistani",
+    "Nepali",
+    "Swedish",
+    "Portuguese",
+    "Argentinian",
+    "Somali",
+    "Bolivian",
+    "Tibetan",
+    "Haitian",
+    "Kazakh",
+    "Finnish",
+    "Fijian"
+  ],
+  "corporature": [
+    "slim",
+    "stocky",
+    "tall, lanky",
+    "broad-shouldered",
+    "petite",
+    "athletic",
+    "heavyset",
+    "wiry",
+    "plus-size",
+    "muscular",
+    "short, round",
+    "tall"
+  ],
+  "capelli": {
+    "man": [
+      "a shaved head",
+      "short curly black hair",
+      "a grey ponytail",
+      "wavy hair and a thick red beard",
+      "slicked-back hair and salt-and-pepper stubble",
+      "long braided hair",
+      "a neat afro",
+      "a bald head and a white moustache",
+      "messy blond hair",
+      "a buzz cut",
+      "shoulder-length dreadlocks",
+      "long hair tied in a bun",
+      "a trimmed black beard",
+      "thinning grey hair combed to the side",
+      "a dark mullet",
+      "short silver hair and a goatee"
+    ],
+    "woman": [
+      "a short silver bob",
+      "long straight black hair",
+      "curly auburn hair tied up",
+      "long box braids",
+      "a pixie cut",
+      "a shaved head",
+      "wavy blond hair",
+      "a high ponytail",
+      "grey hair in a loose bun",
+      "a natural afro",
+      "a long dark braid over one shoulder",
+      "short pink-dyed hair",
+      "a bright patterned headwrap",
+      "a silk headscarf",
+      "copper curls to the shoulders",
+      "a sleek black bob with straight bangs"
+    ]
+  },
+  "dettagli": [
+    "freckles across the nose",
+    "deep laugh lines",
+    "round tortoiseshell glasses",
+    "a small scar through one eyebrow",
+    "high cheekbones",
+    "a gap-toothed smile",
+    "weathered, sun-tanned skin",
+    "a small gold nose ring",
+    "thick dark eyebrows",
+    "striking green eyes",
+    "vitiligo patches on the cheeks",
+    "a tattoo on the side of the neck",
+    "silver hoop earrings",
+    "a crooked nose",
+    "deep-set brown eyes",
+    "rosy cheeks"
+  ],
+  "vestiti": {
+    "any": [
+      "a yellow raincoat",
+      "a chef's white jacket",
+      "a tailored navy suit",
+      "a worn leather biker jacket",
+      "a chunky hand-knitted sweater",
+      "firefighter turnout gear",
+      "a crumpled linen shirt",
+      "a denim jumpsuit",
+      "a white lab coat",
+      "a traditional embroidered tunic",
+      "a hooded parka with fur trim",
+      "mechanic's overalls stained with oil",
+      "a sequined stage jacket",
+      "a hiking jacket and a backpack",
+      "a beekeeper's suit with the veil pushed back",
+      "a long wool coat and a striped scarf",
+      "a retro tracksuit",
+      "a cowboy hat and a checked shirt",
+      "an apron dusted with flour",
+      "a vintage leather pilot jacket",
+      "green hospital scrubs",
+      "a fisherman's sweater and rubber boots",
+      "a painter's smock covered in paint",
+      "a sharp black turtleneck"
+    ],
+    "man": [
+      "a three-piece tweed suit",
+      "a short-sleeved Hawaiian shirt",
+      "a kilt and a wool sweater"
+    ],
+    "woman": [
+      "a vintage floral dress",
+      "a flowing red silk dress",
+      "a tailored pantsuit"
+    ]
+  },
+  "espressioni": [
+    "is laughing openly",
+    "has a calm, direct gaze",
+    "smiles shyly",
+    "frowns, serious",
+    "looks lost in thought",
+    "squints into the light",
+    "grins proudly",
+    "looks tired but content",
+    "looks surprised",
+    "smirks mischievously",
+    "looks determined",
+    "smiles warmly"
+  ],
+  "espressioni_brevi": [
+    "laughing",
+    "calm direct gaze",
+    "shy smile",
+    "serious expression",
+    "thoughtful",
+    "squinting",
+    "proud grin",
+    "tired but content",
+    "surprised",
+    "smirk",
+    "determined",
+    "warm smile"
+  ],
+  "pose": {
+    "closeup": [
+      "looking straight into the lens",
+      "glancing over {his} shoulder",
+      "{his} chin resting on one hand",
+      "head slightly tilted",
+      "face turned toward the light",
+      "looking just past the camera"
+    ],
+    "fullbody": [
+      "standing with hands in pockets",
+      "walking toward the camera",
+      "leaning against a wall",
+      "sitting on a flight of steps",
+      "crossing the street mid-stride",
+      "standing with arms crossed",
+      "dancing on the spot",
+      "crouching to tie a shoelace",
+      "carrying a wooden crate",
+      "turning back to look at the camera"
+    ],
+    "creature_fullbody": [
+      "standing tall",
+      "walking toward the camera",
+      "crouching low",
+      "leaning against a wall",
+      "sitting on a stone",
+      "turning back to look at the camera",
+      "stepping out of the shadows",
+      "standing with arms crossed"
+    ]
+  },
+  "luoghi": [
+    [
+      "in",
+      "a narrow lane of a night market",
+      "out"
+    ],
+    [
+      "in",
+      "a foggy harbor at dawn",
+      "out"
+    ],
+    [
+      "in",
+      "the middle of a sunlit wheat field",
+      "out"
+    ],
+    [
+      "in",
+      "a cluttered woodworking shop",
+      "in"
+    ],
+    [
+      "in",
+      "an old library",
+      "in"
+    ],
+    [
+      "in",
+      "a quiet rooftop garden",
+      "out"
+    ],
+    [
+      "on",
+      "an empty desert road",
+      "out"
+    ],
+    [
+      "in",
+      "a snowy pine forest",
+      "out"
+    ],
+    [
+      "in",
+      "a tiled kitchen",
+      "in"
+    ],
+    [
+      "on",
+      "a subway platform",
+      "in"
+    ],
+    [
+      "in",
+      "a flower market",
+      "out"
+    ],
+    [
+      "on",
+      "a mountain trail",
+      "out"
+    ],
+    [
+      "in",
+      "a laundromat",
+      "in"
+    ],
+    [
+      "in",
+      "a greenhouse full of plants",
+      "in"
+    ],
+    [
+      "in",
+      "an old train carriage",
+      "in"
+    ],
+    [
+      "on",
+      "a beach at low tide",
+      "out"
+    ],
+    [
+      "in",
+      "an old cafe",
+      "in"
+    ],
+    [
+      "in",
+      "a busy fish market",
+      "in"
+    ],
+    [
+      "in",
+      "a small recording studio",
+      "in"
+    ],
+    [
+      "on",
+      "a rainy city street lit by neon signs",
+      "in"
+    ]
+  ],
+  "luci": {
+    "in": [
+      "soft window light from the side",
+      "warm candlelight",
+      "a single large softbox from the front",
+      "pink and blue neon glow",
+      "warm tungsten lamps",
+      "cool light from a big window",
+      "a single bare bulb overhead"
+    ],
+    "out": [
+      "warm golden hour sun",
+      "flat overcast daylight",
+      "harsh midday sun with hard shadows",
+      "cool blue hour light",
+      "dappled light through leaves",
+      "the soft grey light of a rainy day",
+      "low winter sun",
+      "the last orange light of sunset"
+    ]
+  },
+  "obiettivi": {
+    "closeup": [
+      "85mm lens, shallow depth of field",
+      "105mm lens, creamy bokeh",
+      "50mm lens, shallow depth of field, fine film grain"
+    ],
+    "fullbody": [
+      "35mm lens",
+      "50mm lens, deep depth of field",
+      "28mm lens, fine film grain"
+    ]
+  },
+  "obiettivi_brevi": {
+    "closeup": [
+      "85mm, shallow depth of field",
+      "105mm, bokeh",
+      "50mm, film grain"
+    ],
+    "fullbody": [
+      "35mm, full body in frame",
+      "50mm, full body in frame",
+      "28mm, full body in frame"
+    ]
+  },
+  "creature": [
+    "a towering forest troll with mossy grey skin and short tusks",
+    "a chrome humanoid robot with exposed cables and glowing blue eyes",
+    "a slender alien with iridescent violet skin and large black eyes",
+    "an elf with long silver hair and pointed ears",
+    "an orc warrior with green skin, tusks and braided black hair",
+    "a stone golem of cracked basalt with glowing veins of lava",
+    "a pale vampire with red eyes and a high-collared coat",
+    "a werewolf with matted brown fur and amber eyes",
+    "a lizard-like humanoid with emerald scales",
+    "a mushroom spirit with a wide red cap for a head",
+    "a deep-sea creature with bioluminescent spots",
+    "a gargoyle with weathered stone wings",
+    "a minotaur with long curved horns",
+    "a cyborg with half of the face made of brass gears",
+    "a translucent ghost in an old-fashioned dress",
+    "a tree spirit with bark skin and leaves for hair",
+    "a furry monster with blue fur and one big eye",
+    "a goblin with huge ears and a crooked grin",
+    "an insectoid alien with a shiny black exoskeleton",
+    "a clockwork automaton made of brass and glass",
+    "a snow yeti with thick white fur",
+    "a fire elemental made of living flames",
+    "a swamp creature covered in algae",
+    "a skeletal knight in rusty armor",
+    "a fairy with dragonfly wings and freckled green skin",
+    "a dragon-headed knight"
+  ],
+  "creature_dettagli": [
+    {
+      "frase": "It wears a tattered hooded cloak",
+      "breve": "tattered hooded cloak"
+    },
+    {
+      "frase": "Ornate golden armor covers its chest",
+      "breve": "ornate golden armor"
+    },
+    {
+      "frase": "A leather satchel hangs across its chest",
+      "breve": "leather satchel"
+    },
+    {
+      "frase": "A tiny bowler hat sits on its head",
+      "breve": "tiny bowler hat"
+    },
+    {
+      "frase": "Strands of seaweed hang from its arms",
+      "breve": "strands of seaweed"
+    },
+    {
+      "frase": "It carries a lantern in one hand",
+      "breve": "holding a lantern"
+    },
+    {
+      "frase": "It leans on a gnarled wooden staff",
+      "breve": "gnarled wooden staff"
+    },
+    {
+      "frase": "Small birds perch on its shoulders",
+      "breve": "small birds on its shoulders"
+    },
+    {
+      "frase": "A rusty chain is wrapped around one arm",
+      "breve": "rusty chain around one arm"
+    },
+    {
+      "frase": "It wears a hand-knitted scarf",
+      "breve": "hand-knitted scarf"
+    },
+    {
+      "frase": "It holds a steaming cup of tea",
+      "breve": "holding a cup of tea"
+    },
+    {
+      "frase": "Glowing runes are carved into its skin",
+      "breve": "glowing runes"
+    }
+  ],
+  "creature_espressioni": [
+    "stares with a menacing glare",
+    "tilts its head with curiosity",
+    "smiles gently",
+    "roars with its mouth wide open",
+    "looks on with sad, ancient eyes",
+    "grins mischievously",
+    "watches calmly",
+    "looks shy and a little lost"
+  ],
+  "creature_espressioni_brevi": [
+    "menacing glare",
+    "curious head tilt",
+    "gentle smile",
+    "roaring",
+    "sad ancient eyes",
+    "mischievous grin",
+    "calm gaze",
+    "shy"
+  ],
+  "creature_luoghi": [
+    [
+      "in",
+      "a misty swamp",
+      "out"
+    ],
+    [
+      "in",
+      "a ruined cathedral",
+      "in"
+    ],
+    [
+      "in",
+      "an alien desert under two moons",
+      "out"
+    ],
+    [
+      "in",
+      "a neon-lit alley",
+      "out"
+    ],
+    [
+      "in",
+      "a dark forest",
+      "out"
+    ],
+    [
+      "in",
+      "an ice cave",
+      "in"
+    ],
+    [
+      "in",
+      "a crowded spaceport",
+      "in"
+    ],
+    [
+      "in",
+      "a cozy cottage kitchen",
+      "in"
+    ],
+    [
+      "at",
+      "a city bus stop in the rain",
+      "out"
+    ],
+    [
+      "on",
+      "a volcanic plain",
+      "out"
+    ],
+    [
+      "in",
+      "an abandoned subway tunnel",
+      "in"
+    ],
+    [
+      "in",
+      "a sunny meadow full of flowers",
+      "out"
+    ]
+  ],
+  "anime": {
+    "capelli": {
+      "man": [
+        "short hair, black hair",
+        "spiked hair, blonde hair",
+        "long hair, white hair, ponytail",
+        "messy hair, brown hair",
+        "undercut, red hair",
+        "short hair, blue hair",
+        "bald, beard",
+        "medium hair, silver hair",
+        "curly hair, black hair, stubble",
+        "dreadlocks, black hair",
+        "short hair, grey hair, mustache",
+        "long hair, black hair, hair bun"
+      ],
+      "woman": [
+        "long hair, black hair",
+        "short hair, pink hair",
+        "twin braids, brown hair",
+        "bob cut, silver hair",
+        "ponytail, blonde hair",
+        "wavy hair, red hair",
+        "very short hair, white hair",
+        "side ponytail, blue hair",
+        "hair bun, black hair",
+        "curly hair, brown hair",
+        "long hair, green hair",
+        "short hair, grey hair"
+      ]
+    },
+    "pelle": [
+      "",
+      "",
+      "dark skin",
+      "tan",
+      "pale skin"
+    ],
+    "occhi": [
+      "blue eyes",
+      "brown eyes",
+      "green eyes",
+      "red eyes",
+      "yellow eyes",
+      "grey eyes",
+      "purple eyes",
+      "heterochromia"
+    ],
+    "vestiti": {
+      "any": [
+        "leather jacket, jeans",
+        "hoodie, headphones around neck",
+        "business suit, necktie",
+        "kimono",
+        "military uniform",
+        "chef uniform",
+        "labcoat, glasses",
+        "armor, cape",
+        "sweater, scarf",
+        "apron",
+        "witch hat, robe",
+        "pilot suit",
+        "trench coat",
+        "track jacket",
+        "yukata",
+        "oversized coat",
+        "detective outfit, fedora",
+        "mechanic, jumpsuit"
+      ],
+      "man": [
+        "hakama",
+        "vest, rolled up sleeves"
+      ],
+      "woman": [
+        "sundress",
+        "office lady"
+      ]
+    },
+    "espressioni": [
+      "smile",
+      "grin",
+      "serious",
+      "closed eyes, peaceful",
+      "smirk",
+      "surprised, open mouth",
+      "determined",
+      "laughing"
+    ],
+    "pose": {
+      "closeup": [
+        [
+          "portrait, close-up, looking at viewer",
+          "looks straight at the viewer"
+        ],
+        [
+          "upper body, face focus, looking at viewer",
+          "turns toward the viewer"
+        ],
+        [
+          "close-up, head tilt, looking at viewer",
+          "tilts the head and looks at the viewer"
+        ]
+      ],
+      "fullbody": [
+        [
+          "full body, standing",
+          "stands in full view"
+        ],
+        [
+          "full body, walking",
+          "walks toward the viewer"
+        ],
+        [
+          "full body, sitting",
+          "sits and rests for a moment"
+        ],
+        [
+          "full body, leaning against wall",
+          "leans against a wall"
+        ],
+        [
+          "full body, standing, arms crossed",
+          "stands with arms crossed"
+        ]
+      ]
+    },
+    "sfondi": [
+      [
+        "city, night, neon lights",
+        "in a city street at night"
+      ],
+      [
+        "cherry blossoms, park",
+        "in a park in bloom"
+      ],
+      [
+        "train station",
+        "at a train station"
+      ],
+      [
+        "cafe, indoors",
+        "in a small cafe"
+      ],
+      [
+        "library, bookshelf",
+        "in an old library"
+      ],
+      [
+        "rooftop, sunset",
+        "on a rooftop at sunset"
+      ],
+      [
+        "forest, sunlight",
+        "in a sunny forest"
+      ],
+      [
+        "beach, ocean",
+        "on a beach"
+      ],
+      [
+        "snow, winter",
+        "on a snowy street"
+      ],
+      [
+        "market, lanterns",
+        "in a lantern-lit market"
+      ],
+      [
+        "desert, ruins",
+        "among desert ruins"
+      ],
+      [
+        "spacecraft interior",
+        "inside a spaceship"
+      ]
+    ],
+    "luci": [
+      "soft lighting",
+      "golden hour",
+      "backlighting",
+      "rim light",
+      "dramatic lighting",
+      "night"
+    ],
+    "creature": [
+      [
+        "no humans, robot, mecha, glowing eyes, mechanical parts",
+        "a battered old robot"
+      ],
+      [
+        "no humans, monster, troll, moss, tusks",
+        "a mossy forest troll"
+      ],
+      [
+        "no humans, golem, rock, lava, glowing",
+        "a stone golem with veins of lava"
+      ],
+      [
+        "1other, alien, colored skin, black eyes",
+        "a gentle alien"
+      ],
+      [
+        "1girl, elf, pointy ears, long hair, silver hair, adult",
+        "a grown-up elf"
+      ],
+      [
+        "1boy, orc, green skin, tusks, muscular",
+        "an orc warrior"
+      ],
+      [
+        "1boy, vampire, pale skin, red eyes, fangs, cape",
+        "a vampire"
+      ],
+      [
+        "no humans, werewolf, furry, fangs, full moon",
+        "a werewolf"
+      ],
+      [
+        "no humans, mushroom, monster, red cap",
+        "a mushroom spirit"
+      ],
+      [
+        "no humans, gargoyle, stone, wings",
+        "a stone gargoyle"
+      ],
+      [
+        "1girl, ghost, translucent, floating, old-fashioned dress, adult",
+        "a ghost of a woman"
+      ],
+      [
+        "no humans, monster, blue fur, cyclops, cute",
+        "a friendly one-eyed monster"
+      ],
+      [
+        "1boy, cyborg, mechanical parts, gears",
+        "a cyborg"
+      ],
+      [
+        "no humans, dragon, scales, horns, armor, knight",
+        "a dragon-headed knight"
+      ],
+      [
+        "1girl, fairy, insect wings, green skin, adult",
+        "a grown-up fairy"
+      ],
+      [
+        "no humans, fire, elemental, flames",
+        "a fire spirit"
+      ]
+    ]
+  }
+}

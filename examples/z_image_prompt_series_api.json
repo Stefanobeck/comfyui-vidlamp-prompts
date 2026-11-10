@@ -1,0 +1,200 @@
+{
+ "9": {
+  "inputs": {
+   "filename_prefix": "vidlamp_prompts/z-image",
+   "images": [
+    "67",
+    0
+   ]
+  },
+  "class_type": "SaveImage",
+  "_meta": {
+   "title": "Save Image"
+  }
+ },
+ "64": {
+  "inputs": {
+   "clip_name": "qwen_3_4b.safetensors",
+   "type": "lumina2",
+   "device": "default"
+  },
+  "class_type": "CLIPLoader",
+  "_meta": {
+   "title": "Load CLIP"
+  }
+ },
+ "65": {
+  "inputs": {
+   "vae_name": "ae.safetensors"
+  },
+  "class_type": "VAELoader",
+  "_meta": {
+   "title": "Load VAE"
+  }
+ },
+ "66": {
+  "inputs": {
+   "conditioning": [
+    "69",
+    0
+   ]
+  },
+  "class_type": "ConditioningZeroOut",
+  "_meta": {
+   "title": "ConditioningZeroOut"
+  }
+ },
+ "67": {
+  "inputs": {
+   "samples": [
+    "72",
+    0
+   ],
+   "vae": [
+    "65",
+    0
+   ]
+  },
+  "class_type": "VAEDecode",
+  "_meta": {
+   "title": "VAE Decode"
+  }
+ },
+ "68": {
+  "inputs": {
+   "unet_name": "z_image_turbo_int8_convrot.safetensors",
+   "weight_dtype": "default"
+  },
+  "class_type": "UNETLoader",
+  "_meta": {
+   "title": "Load Diffusion Model"
+  }
+ },
+ "69": {
+  "inputs": {
+   "text": [
+    "90",
+    0
+   ],
+   "clip": [
+    "64",
+    0
+   ]
+  },
+  "class_type": "CLIPTextEncode",
+  "_meta": {
+   "title": "CLIP Text Encode (Prompt)"
+  }
+ },
+ "70": {
+  "inputs": {
+   "width": 1280,
+   "height": 720,
+   "batch_size": 1
+  },
+  "class_type": "EmptySD3LatentImage",
+  "_meta": {
+   "title": "EmptySD3LatentImage"
+  }
+ },
+ "71": {
+  "inputs": {
+   "shift": 3,
+   "model": [
+    "73",
+    0
+   ]
+  },
+  "class_type": "ModelSamplingAuraFlow",
+  "_meta": {
+   "title": "ModelSamplingAuraFlow"
+  }
+ },
+ "72": {
+  "inputs": {
+   "seed": 42,
+   "steps": 8,
+   "cfg": 1,
+   "sampler_name": "res_multistep",
+   "scheduler": "simple",
+   "denoise": 1,
+   "model": [
+    "71",
+    0
+   ],
+   "positive": [
+    "69",
+    0
+   ],
+   "negative": [
+    "66",
+    0
+   ],
+   "latent_image": [
+    "70",
+    0
+   ]
+  },
+  "class_type": "KSampler",
+  "_meta": {
+   "title": "KSampler"
+  }
+ },
+ "73": {
+  "inputs": {
+   "attention": "comfy kitchen attention",
+   "model": [
+    "68",
+    0
+   ]
+  },
+  "class_type": "ModelAttentionBackend",
+  "_meta": {
+   "title": "Model Attention Backend"
+  }
+ },
+ "90": {
+  "class_type": "VidlampPromptSeries",
+  "_meta": {
+   "title": "Vidlamp Prompt Sheet Creator"
+  },
+  "inputs": {
+   "idea": "A vintage brass magic lamp on a dark wooden table, warm cinematic light, soft smoke rising from its spout, a small elegant brass plate in front of it engraved with the word \"VIDLAMP\", shallow depth of field, photorealistic.",
+   "target": "Z-Image Turbo",
+   "category": "Any",
+   "style": "Random",
+   "count": 8,
+   "mode": "Explore (different scenes)",
+   "engine": "Presets (no AI)",
+   "strange_mix": false,
+   "seed": 42,
+   "trigger_words": "",
+   "temperature": 1.0,
+   "max_length": 700,
+   "frame": "Landscape 16:9",
+   "server_model": "auto (first installed)",
+   "server_url": "",
+   "system_prompt": ""
+  }
+ },
+ "91": {
+  "class_type": "VidlampPromptSheet",
+  "_meta": {
+   "title": "Vidlamp Prompt Sheet"
+  },
+  "inputs": {
+   "images": [
+    "67",
+    0
+   ],
+   "prompts": [
+    "90",
+    0
+   ],
+   "columns": 4,
+   "cell_width": 512,
+   "text_lines": 6,
+   "filename_prefix": "vidlamp_prompts/sheet"
+  }
+ }
+}

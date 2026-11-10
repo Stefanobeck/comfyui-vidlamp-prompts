@@ -1,0 +1,797 @@
+{
+    "family": "photo",
+    "nota": "Prompt pronti per i modelli che leggono frasi lunghe come didascalie (Z-Image, Qwen-Image, FLUX.2 Klein, Krea 2, Boogu, ERNIE). Scritti per Vidlamp l'8/10/2026 seguendo la guida di Z-Image: mezzo e inquadratura in testa, dettagli concreti, luce, lente, palette; niente tag di qualita'.",
+    "categorie": [
+        {
+            "id": "ritratto",
+            "label": {
+                "it": "Personaggi",
+                "en": "Characters"
+            },
+            "prompt": [
+                {
+                    "titolo": {
+                        "it": "Vecchio pescatore",
+                        "en": "Old fisherman"
+                    },
+                    "testo": "A close-up documentary portrait of a Sicilian fisherman in his seventies sitting on an overturned wooden boat in a small harbor. Deep sun-carved wrinkles, white stubble, pale blue eyes, a faded red knit cap and a navy wool sweater with frayed cuffs. His rough hands rest on a coil of orange rope. Behind him, out of focus, blue and white fishing boats and a stone quay. Low morning sun from the left, warm and raking across his face, strong texture in the skin. Eye-level shot, 85mm lens, shallow depth of field, muted teal and terracotta palette, fine film grain."
+                },
+                {
+                    "titolo": {
+                        "it": "Ballerina dietro le quinte",
+                        "en": "Dancer backstage"
+                    },
+                    "testo": "A candid backstage photograph of a young Black ballet dancer in her twenties lacing her pointe shoes on a wooden bench. She wears a pale pink leotard and a grey wool warm-up wrap, her hair in a tight bun, her expression focused. Around her, a mirror with a row of round bulbs, hanging tutus and scattered rosin dust on the floor. Warm tungsten light from the mirror bulbs mixes with a cool blue spill from the stage door. Medium shot from a low angle, 35mm lens, shallow depth of field, soft grain, warm amber and dusty pink palette."
+                },
+                {
+                    "titolo": {
+                        "it": "Fabbro alla forgia",
+                        "en": "Blacksmith at the forge"
+                    },
+                    "testo": "A dramatic environmental portrait of a South Asian blacksmith in his forties hammering a glowing orange iron bar on an anvil. He has a thick black beard, a leather apron over a sweat-darkened grey shirt and safety glasses pushed up on his forehead. Sparks fly in bright arcs toward the camera. The forge behind him burns deep orange, the rest of the workshop falls into darkness with hanging tongs and hammers. Single hot light from the forge on the right, black shadows on the left. Medium shot, 50mm lens, fast shutter freezing the sparks, high contrast."
+                },
+                {
+                    "titolo": {
+                        "it": "Nonna in cucina",
+                        "en": "Grandmother in the kitchen"
+                    },
+                    "testo": "A warm lifestyle photograph of a Korean grandmother in her eighties folding dumplings at a small kitchen table. Short permed grey hair, a lavender cardigan over a floral blouse, reading glasses on a chain, a gentle smile. On the table, a wooden board dusted with flour, a bowl of minced filling and neat rows of finished dumplings. Soft daylight from a window with a lace curtain behind her, steam rising from a pot on the stove. Medium shot at table height, 50mm lens, shallow depth of field, creamy whites, soft greens and warm wood tones."
+                },
+                {
+                    "titolo": {
+                        "it": "Ritratto in chiaroscuro",
+                        "en": "Chiaroscuro studio portrait"
+                    },
+                    "testo": "A low-key studio portrait of a middle-aged Mediterranean man with salt-and-pepper curly hair and a trimmed grey beard, wearing a dark charcoal turtleneck. He looks slightly past the camera with a calm, serious expression. Classic Rembrandt lighting from a single softbox high on the left, a small triangle of light on his shadowed cheek, the background falling to deep black. Head-and-shoulders framing, 105mm lens, sharp focus on the eyes, fine skin texture with visible pores, palette of warm skin tones against black."
+                },
+                {
+                    "titolo": {
+                        "it": "Lentiggini al tramonto",
+                        "en": "Freckles at golden hour"
+                    },
+                    "testo": "A golden-hour outdoor portrait of an Irish teenage girl with copper red hair blowing in the wind and dense freckles across her nose and cheeks. She wears an oversized cream knit sweater and squints slightly into the low sun with a relaxed half smile. Behind her, a field of tall dry grass glowing in backlight and a pale hazy sky. Strong warm backlight creating a rim of light around her hair, soft fill from the front. Close-up, 85mm lens wide open, creamy bokeh, warm honey and gold palette."
+                },
+                {
+                    "titolo": {
+                        "it": "Sassofonista jazz",
+                        "en": "Jazz saxophonist"
+                    },
+                    "testo": "A moody photograph of an elderly African American jazz musician playing a tenor saxophone on a small club stage. He wears a dark suit, a loosened burgundy tie and a felt fedora, his eyes closed in concentration. The brass of the saxophone catches a narrow spotlight from above, haze floating in the beam. Behind him, out of focus, a double bass and warm round table lamps in the audience. Medium shot from slightly below, 50mm lens, deep shadows, palette of amber, brass and deep blue."
+                },
+                {
+                    "titolo": {
+                        "it": "Apicoltrice",
+                        "en": "Beekeeper"
+                    },
+                    "testo": "A bright documentary photograph of a Mexican beekeeper in her thirties lifting a honeycomb frame out of a wooden hive. She wears a white protective jacket with the mesh veil pushed back, her dark hair tied in a braid, and inspects the frame with a calm smile. Bees crawl over the golden comb dripping with honey. Around her, a meadow with yellow wildflowers and more hives painted pastel blue. Late-afternoon sun from behind, honey glowing translucent. Medium shot, 50mm lens, shallow depth of field, warm yellow, white and sky blue palette."
+                },
+                {
+                    "titolo": {
+                        "it": "Sotto la pioggia al neon",
+                        "en": "Neon rain portrait"
+                    },
+                    "testo": "A cinematic night portrait of a Japanese man in his thirties standing under a clear plastic umbrella on a narrow Tokyo side street. He wears a black overcoat over a white shirt, rain beading on the umbrella. Pink and cyan neon signs behind him melt into large soft bokeh circles, reflections shimmer on the wet asphalt. Light comes from the signs, cyan on one side of his face and magenta on the other. Medium close-up, 50mm lens at wide aperture, fine rain streaks, palette of magenta, cyan and black."
+                },
+                {
+                    "titolo": {
+                        "it": "Pastora delle Ande",
+                        "en": "Andean shepherd"
+                    },
+                    "testo": "An outdoor portrait of a Quechua woman in her fifties standing beside an alpaca on a high Andean plateau. She wears a bright red and orange woven poncho, a dark felt bowler hat over two long black braids, and holds a wooden staff. The white alpaca wears colorful yarn tassels in its ears. Behind them, golden grassland and snow-capped peaks under a deep blue sky with fast clouds. Clear high-altitude sunlight from the side, crisp shadows. Medium shot, 35mm lens, saturated reds against blue and gold."
+                }
+            ],
+            "componi": "characters"
+        },
+        {
+            "id": "moda",
+            "label": {
+                "it": "Moda",
+                "en": "Fashion"
+            },
+            "prompt": [
+                {
+                    "titolo": {
+                        "it": "Editoriale nel deserto",
+                        "en": "Desert editorial"
+                    },
+                    "testo": "A high-fashion editorial photograph of a tall Somali model in a flowing burnt-orange silk gown walking along the crest of a sand dune. The long fabric trails behind her and ripples in the wind, gold cuff bracelets on both wrists, hair in a sleek low bun. The dunes stretch in soft curves under a pale cloudless sky. Low late-afternoon sun from the side carves strong shadows into the sand ripples. Full-body shot from a low angle, 70mm lens, crisp detail, minimal palette of orange, sand and pale blue."
+                },
+                {
+                    "titolo": {
+                        "it": "Street style a Tokyo",
+                        "en": "Tokyo street style"
+                    },
+                    "testo": "A street style photograph of a young non-binary person in their twenties crossing a Harajuku side street in Tokyo. Layered outfit: an oversized lime green puffer jacket over a long checked shirt, wide black cargo trousers, chunky white sneakers and a silver chain bag. Bleached short hair, round tinted glasses. Behind them, small boutiques, hand-painted signs and a vending machine, slightly out of focus. Overcast daylight, even and soft. Full-body shot at eye level, 35mm lens, candid mid-stride pose, bright accents of lime and silver against grey city tones."
+                },
+                {
+                    "titolo": {
+                        "it": "Abito da sera sullo scalone",
+                        "en": "Evening gown on the staircase"
+                    },
+                    "testo": "An elegant fashion photograph of a woman in her forties with short platinum hair posing on a sweeping white marble staircase in an old Italian palazzo. She wears a floor-length emerald velvet gown with long sleeves and a deep back, one hand on the carved stone banister. Gilded frames and a crystal chandelier glow in the background. Soft warm light from tall windows on the right, gentle highlights on the velvet. Full-body shot from a few steps below, 50mm lens, classic composition, palette of emerald, ivory marble and gold."
+                },
+                {
+                    "titolo": {
+                        "it": "Doppiopetto a Milano",
+                        "en": "Double-breasted in Milan"
+                    },
+                    "testo": "A menswear campaign photograph of a Senegalese man in his thirties walking past a Milan arcade. He wears a tailored double-breasted suit in camel wool, a cream knit polo underneath, brown suede loafers and tortoiseshell sunglasses, a leather briefcase in one hand. Behind him, arches with stone columns, shop windows and a cyclist out of focus. Clear morning sunlight with long shadows across the pavement. Full-body shot at eye level, 50mm lens, sharp tailoring details, warm palette of camel, cream, tan and grey stone."
+                },
+                {
+                    "titolo": {
+                        "it": "Collezione invernale",
+                        "en": "Winter collection"
+                    },
+                    "testo": "A winter fashion photograph of a Finnish model in her twenties standing in a snowy birch forest. She wears a long charcoal wool coat with a wide shawl collar, a chunky ivory turtleneck, a red beret and black leather gloves, breath visible in the cold air. Snow covers the ground and the white birch trunks rise in rows behind her, soft flakes falling. Diffuse overcast light, very soft shadows. Three-quarter shot, 85mm lens, shallow depth of field, near-monochrome palette with the red beret as the only strong color."
+                },
+                {
+                    "titolo": {
+                        "it": "Look anni Settanta",
+                        "en": "Seventies look"
+                    },
+                    "testo": "A retro fashion photograph of a Brazilian woman in her twenties with a big curly afro roller-skating in a 1970s roller rink. She wears high-waisted flared denim jeans, a mustard ribbed top with a wide collar and large gold hoop earrings, white skates with orange wheels. A glittering mirror ball and colored spotlights hang above, the wooden floor reflects the lights. Motion blur in the background, the skater sharp. Full-body shot, 35mm lens, warm film colors of mustard, orange, brown and violet, visible grain."
+                },
+                {
+                    "titolo": {
+                        "it": "Gioielli in primo piano",
+                        "en": "Jewelry close-up"
+                    },
+                    "testo": "A luxury jewelry close-up of a woman's neck, jawline and hand against bare skin. She wears layered fine gold chains with a small pearl pendant, sculptural gold drop earrings and two thin stacked rings, her fingers lightly touching her collarbone. Smooth deep brown skin with a subtle natural sheen. Soft directional light from the upper right making the gold glow, a clean warm beige background. Macro-style close-up, 100mm lens, very shallow depth of field, palette of gold, warm brown and beige."
+                },
+                {
+                    "titolo": {
+                        "it": "Campagna sportiva all'alba",
+                        "en": "Sportswear campaign at dawn"
+                    },
+                    "testo": "A sportswear campaign photograph of a Kenyan female sprinter in her twenties in a starting stance on an empty red running track at dawn. She wears a fitted black crop top, high-waisted black running shorts and neon yellow spikes, her face focused. White lane lines run toward the vanishing point, the stadium empty around her. Low sun behind her creating a bright rim along her shoulders and a long shadow toward the camera. Low-angle wide shot, 24mm lens, crisp detail, palette of red track, black and neon yellow."
+                },
+                {
+                    "titolo": {
+                        "it": "Sfilata",
+                        "en": "Runway show"
+                    },
+                    "testo": "A runway photograph of a tall male model with a shaved head walking toward the camera on a long white catwalk. He wears a sculptural oversized white shirt with exaggerated sleeves, wide pleated black trousers and polished black boots. Rows of seated guests in shadow line both sides, several phone screens glowing. Bright frontal stage lighting with a hard spotlight from above. Full-body shot down the center of the runway, 200mm telephoto lens compressing the space, high contrast black and white palette with a warm audience glow."
+                },
+                {
+                    "titolo": {
+                        "it": "Moda sostenibile in serra",
+                        "en": "Sustainable fashion in a greenhouse"
+                    },
+                    "testo": "A soft fashion photograph of a Vietnamese woman in her thirties standing among potted plants in an old glass greenhouse. She wears a loose undyed linen shirt dress with rolled sleeves, a woven straw hat and simple leather sandals, holding a small watering can. Ferns, lemon trees and climbing vines fill the space, sunlight filtering through dusty glass panes. Warm diffused light with soft dappled shadows on her dress. Full-body shot, 50mm lens, natural palette of sage green, oatmeal linen and terracotta pots."
+                }
+            ]
+        },
+        {
+            "id": "prodotto",
+            "label": {
+                "it": "Prodotto",
+                "en": "Product"
+            },
+            "prompt": [
+                {
+                    "titolo": {
+                        "it": "Profumo su pietra",
+                        "en": "Perfume on stone"
+                    },
+                    "testo": "A luxury product photograph of a square glass perfume bottle with a heavy gold cap standing on a rough slab of dark volcanic stone. The amber liquid glows from inside. A single dried orange slice and a sprig of rosemary lie beside it. Shallow water around the stone reflects the bottle. Hard side light from the left with a warm gel, a soft backlight outlining the edges of the glass, deep charcoal background. Low eye-level close-up, 100mm macro lens, crisp reflections, palette of amber, gold and charcoal."
+                },
+                {
+                    "titolo": {
+                        "it": "Orologio da polso",
+                        "en": "Wristwatch macro"
+                    },
+                    "testo": "A macro product photograph of a steel automatic wristwatch with a deep blue sunburst dial and silver hands, lying at an angle on a folded brown leather strap. Fine brushed and polished surfaces on the case catch thin lines of light. Tiny water droplets sit on the sapphire crystal. Dark slate background with a soft gradient. Two strip lights from above and from the right draw long reflections along the case. Close-up from a 30-degree angle, 100mm macro lens, very sharp detail, palette of navy, steel and cognac."
+                },
+                {
+                    "titolo": {
+                        "it": "Sneaker sospesa",
+                        "en": "Floating sneaker"
+                    },
+                    "testo": "A dynamic commercial photograph of a white running sneaker with mint green accents floating in mid-air at a slight angle. Small chunks of pastel foam and white dust burst around the sole as if it just landed. Plain soft peach background with a gentle gradient. Bright even studio light from the front with a soft shadow on an invisible floor below. Side three-quarter view, 85mm lens, crisp detail on the knit upper and the stitching, clean pastel palette of white, mint and peach."
+                },
+                {
+                    "titolo": {
+                        "it": "Cosmetici dall'alto",
+                        "en": "Cosmetics flat lay"
+                    },
+                    "testo": "A top-down flat lay photograph of skincare products arranged on pale pink travertine: a frosted glass serum bottle with a dropper, a white ceramic jar of cream with the lid off showing a smooth swirl, a small glass roller and a few dried rose petals. A narrow beam of sunlight with leaf shadows falls diagonally across the scene. Overhead shot, 50mm lens, everything sharp, soft natural colors of blush pink, cream and frosted glass, minimal and airy composition with empty space on the right."
+                },
+                {
+                    "titolo": {
+                        "it": "Cuffie su colore pieno",
+                        "en": "Headphones on bold color"
+                    },
+                    "testo": "A bold product photograph of matte black over-ear wireless headphones standing on a cobalt blue pedestal against a bright orange wall. The ear cushions show fine leather texture, a thin metal band shines at the top. Hard light from the upper left casts a sharp graphic shadow onto the orange wall. Straight-on shot at eye level, 70mm lens, clean edges, strong complementary palette of orange, cobalt blue and black, minimalist pop-art style composition."
+                },
+                {
+                    "titolo": {
+                        "it": "Olio nell'uliveto",
+                        "en": "Olive oil in the grove"
+                    },
+                    "testo": "A rustic product photograph of a tall dark green glass bottle of extra virgin olive oil standing on a weathered wooden table in an olive grove. A small ceramic dish of golden oil, a piece of crusty bread and a branch with green olives lie beside it. Behind, twisted olive trunks and silver leaves blur into soft bokeh. Warm late-afternoon sun from behind, the oil in the dish glowing gold. Close-up at table height, 85mm lens, shallow depth of field, palette of olive green, gold and weathered grey wood."
+                },
+                {
+                    "titolo": {
+                        "it": "Candela artigianale",
+                        "en": "Handmade candle"
+                    },
+                    "testo": "A cozy product photograph of a hand-poured soy candle in a matte terracotta jar, the flame lit and melting a pool of clear wax. A cotton cloth, a few dried eucalyptus sprigs and a box of long matches sit around it on a linen tablecloth. Background of a dim living room with a knitted throw, out of focus. Candlelight is the main warm source, a faint blue window light fills the shadows. Close-up at a slight high angle, 50mm lens, shallow depth of field, palette of terracotta, cream and muted sage."
+                },
+                {
+                    "titolo": {
+                        "it": "Lattina gelata",
+                        "en": "Ice-cold soda can"
+                    },
+                    "testo": "A refreshing commercial photograph of an unbranded aluminum soda can in glossy coral red, covered in fine condensation droplets, half buried in crushed ice. Slices of lime and a few mint leaves rest on the ice, cold mist drifting around the can. Bright aqua background. Crisp light from both sides drawing two vertical highlights on the can, a backlight making the droplets sparkle. Close-up at eye level, 100mm lens, high detail on the droplets, fresh palette of coral red, aqua and lime green."
+                },
+                {
+                    "titolo": {
+                        "it": "Borsa in pelle",
+                        "en": "Leather bag"
+                    },
+                    "testo": "A premium product photograph of a structured handbag in tan vegetable-tanned leather with visible saddle stitching and a polished brass clasp, standing on a block of travertine. A silk scarf in olive and cream is tied to one handle. Plain warm stone-colored background. Soft large light from the left modeling the curves, a small kicker light on the brass hardware. Three-quarter view at eye level, 85mm lens, every stitch sharp, palette of tan, cream, olive and brass."
+                },
+                {
+                    "titolo": {
+                        "it": "Tazza al mattino",
+                        "en": "Morning mug"
+                    },
+                    "testo": "A lifestyle product photograph of a handmade speckled ceramic mug with an uneven glaze in sandy beige, filled with black coffee, on a light oak windowsill. Thin steam rises against the window. Beside it, an open notebook and a pencil. Outside, a blurred garden with green leaves. Soft morning daylight from the window behind, the mug outlined by a gentle rim light. Close-up at windowsill height, 50mm lens, shallow depth of field, calm palette of beige, warm oak and fresh green."
+                }
+            ]
+        },
+        {
+            "id": "cibo",
+            "label": {
+                "it": "Cibo",
+                "en": "Food"
+            },
+            "prompt": [
+                {
+                    "titolo": {
+                        "it": "Margherita dal forno a legna",
+                        "en": "Wood-fired margherita"
+                    },
+                    "testo": "A food photograph of a Neapolitan margherita pizza just pulled from a wood-fired oven, resting on a long wooden peel. Puffy leopard-spotted crust, bright tomato sauce, melting pools of fior di latte and fresh basil leaves glistening with olive oil. Behind it, the glowing dome of the oven with flames and embers, out of focus. Warm fire light from the back and soft daylight from the left. Three-quarter angle close-up, 50mm lens, shallow depth of field, palette of red, white, green and charred brown."
+                },
+                {
+                    "titolo": {
+                        "it": "Ramen fumante",
+                        "en": "Steaming ramen"
+                    },
+                    "testo": "A moody food photograph of a deep black ceramic bowl of tonkotsu ramen on a dark wooden counter. Creamy broth, thin noodles lifted by a pair of chopsticks, slices of chashu pork, a halved soft egg with a jammy yolk, nori, scallions and sesame seeds. Thick steam rises against a dark background. Single warm light from the upper left, deep shadows around the bowl. Close-up at 45 degrees, 85mm lens, shallow depth of field, palette of cream broth, amber yolk, green scallions and black."
+                },
+                {
+                    "titolo": {
+                        "it": "Colazione al bar",
+                        "en": "Italian bar breakfast"
+                    },
+                    "testo": "A bright food photograph of an Italian breakfast on a small round marble café table: a cappuccino in a thick white cup with a leaf of latte art, a golden cornetto dusted with powdered sugar on a white saucer, a glass of fresh orange juice and a folded newspaper. Morning sun from the street window casts long soft shadows. In the background, a blurred café counter with a chrome espresso machine. Close-up from a slightly high angle, 50mm lens, warm palette of cream, gold and orange."
+                },
+                {
+                    "titolo": {
+                        "it": "Tagliere di salumi",
+                        "en": "Charcuterie board"
+                    },
+                    "testo": "An overhead food photograph of a large olive wood board with Italian cured meats and cheeses: folded slices of prosciutto, salami rounds, chunks of aged parmigiano, a wedge of gorgonzola, green olives, figs cut in half, walnuts, honey in a small jar and breadsticks. A glass of red wine and a linen napkin at the edge. Soft daylight from the left, gentle shadows. Top-down shot, 35mm lens, everything in focus, rich palette of rosy pinks, cream, deep purple figs and green."
+                },
+                {
+                    "titolo": {
+                        "it": "Fetta di torta al cioccolato",
+                        "en": "Chocolate cake slice"
+                    },
+                    "testo": "An indulgent food photograph of a thick slice of dark chocolate layer cake on a matte grey plate, glossy ganache dripping down the side, three layers of moist sponge with chocolate cream between them. A few fresh raspberries and a sprinkle of cocoa powder on the plate, a silver fork resting beside it. Dark slate background. Soft backlight from behind with a warm fill from the front, the ganache shining. Close-up at eye level, 100mm lens, shallow depth of field, palette of deep brown, raspberry red and grey."
+                },
+                {
+                    "titolo": {
+                        "it": "Tacos al mercato",
+                        "en": "Street market tacos"
+                    },
+                    "testo": "A vibrant street food photograph of three tacos al pastor on a small plate at a Mexican market stall. Soft corn tortillas, charred pork, pineapple chunks, chopped onion, cilantro and a lime wedge, a little red salsa on the side. Behind, the vertical spit of meat glowing under a heat lamp and a vendor's hands, out of focus. Mixed light from the warm lamp and daylight from the street. Close-up at a low angle, 35mm lens, shallow depth of field, lively palette of yellow, red, green and orange."
+                },
+                {
+                    "titolo": {
+                        "it": "Insalata estiva dall'alto",
+                        "en": "Summer salad from above"
+                    },
+                    "testo": "A fresh overhead food photograph of a large ceramic bowl of summer salad on a white linen tablecloth: heirloom tomatoes in red, orange and yellow, burrata torn open in the center, peaches in wedges, basil leaves, toasted pine nuts and a drizzle of olive oil. Around the bowl, a small dish of flaky salt, a pepper mill and two forks. Bright natural daylight, crisp short shadows. Top-down shot, 35mm lens, everything sharp, colorful palette with lots of white space."
+                },
+                {
+                    "titolo": {
+                        "it": "Pasta fatta a mano",
+                        "en": "Handmade pasta"
+                    },
+                    "testo": "A close-up food photograph of an older Italian woman's hands shaping fresh orecchiette on a floured wooden board. A knife drags small pieces of yellow dough into little ears, rows of finished pasta lined up beside a mound of semolina flour. Flour dust floats in the air. Warm window light from the left grazing the board and the texture of the dough. Close-up from above at an angle, 50mm lens, shallow depth of field, warm palette of golden yellow dough, pale flour and honey-colored wood."
+                },
+                {
+                    "titolo": {
+                        "it": "Cocktail al bancone",
+                        "en": "Cocktail at the bar"
+                    },
+                    "testo": "A stylish photograph of a negroni in a heavy crystal tumbler with a single large clear ice cube and a twist of orange peel, on a dark walnut bar counter. Behind it, rows of bottles on lit shelves blur into warm bokeh. A drop runs down the side of the glass. Backlight from the shelves makes the deep red drink glow, a small spotlight from above highlights the rim. Close-up at counter height, 85mm lens, shallow depth of field, palette of ruby red, orange, walnut and amber."
+                },
+                {
+                    "titolo": {
+                        "it": "Gelato e frutti di bosco",
+                        "en": "Gelato with berries"
+                    },
+                    "testo": "A summery food photograph of a waffle cone with two scoops of gelato, strawberry and pistachio, held against a pale blue sky. A drip of pink gelato runs down the cone, fresh blueberries and raspberries sit on top. The hand holding it has a simple silver ring. Bright midday sun, crisp highlights on the creamy surface. Close-up from slightly below, 85mm lens, shallow depth of field, cheerful palette of strawberry pink, pistachio green, golden cone and sky blue."
+                }
+            ]
+        },
+        {
+            "id": "paesaggio",
+            "label": {
+                "it": "Paesaggio",
+                "en": "Landscape"
+            },
+            "prompt": [
+                {
+                    "titolo": {
+                        "it": "Dolomiti all'alba",
+                        "en": "Dolomites at dawn"
+                    },
+                    "testo": "A landscape photograph of jagged Dolomite peaks glowing pink and orange at dawn above a green alpine meadow. A small wooden hut with a stone base sits in the middle ground, a dirt path winding toward it. Wisps of mist fill the valley below, the sky shifts from pale blue to soft peach. First sunlight hits only the summits, the meadow still in cool shade. Wide shot, 24mm lens, deep depth of field, sharp from foreground grass to the peaks, palette of rose, gold, cool green and blue."
+                },
+                {
+                    "titolo": {
+                        "it": "Faro nella tempesta",
+                        "en": "Lighthouse in a storm"
+                    },
+                    "testo": "A dramatic seascape photograph of a white and red striped lighthouse on a black rocky point during a storm. Huge waves crash against the rocks, white spray flying high. The lighthouse beam cuts through heavy dark grey clouds and rain. A thin band of pale light on the horizon. Long exposure smoothing the distant sea, the waves near the rocks frozen. Wide shot from the shore, 35mm lens, high contrast, palette of slate grey, white foam and the red stripes of the tower."
+                },
+                {
+                    "titolo": {
+                        "it": "Campi di lavanda",
+                        "en": "Lavender fields"
+                    },
+                    "testo": "A summer landscape photograph of long rows of blooming lavender in Provence leading toward an old stone farmhouse with a terracotta roof. A single green tree stands beside the house, rolling hills behind under a clear sky. Late-afternoon sun from the side lights the tops of the lavender and casts long shadows between the rows. Low-angle wide shot from inside a row, 24mm lens, deep depth of field, strong lines converging to the house, palette of violet, warm stone, green and soft blue."
+                },
+                {
+                    "titolo": {
+                        "it": "Dune al tramonto",
+                        "en": "Dunes at sunset"
+                    },
+                    "testo": "A minimalist landscape photograph of sweeping sand dunes in the Sahara at sunset. Sharp crests divide each dune into a bright orange side and a deep shadowed side. A small caravan of three camels and two people in indigo robes walks along a distant ridge, tiny against the scale of the sand. Fine wind ripples cover the foreground. Low warm sun from the right, long shadows. Wide shot, 70mm lens compressing the dunes, palette of orange, rust and violet shadows."
+                },
+                {
+                    "titolo": {
+                        "it": "Foresta nella nebbia",
+                        "en": "Misty forest"
+                    },
+                    "testo": "An atmospheric photograph of a dense beech forest in thick morning fog. Tall grey trunks fade into white mist row after row, the ground covered in copper fallen leaves and patches of moss. Sunbeams break through the canopy in visible diagonal rays. A narrow trail curves into the fog. Soft diffused light, very low contrast in the distance, more detail in the foreground. Wide shot at eye level, 35mm lens, palette of copper, moss green, grey and white."
+                },
+                {
+                    "titolo": {
+                        "it": "Aurora in Islanda",
+                        "en": "Northern lights in Iceland"
+                    },
+                    "testo": "A night landscape photograph of green and violet northern lights swirling above a black sand beach in Iceland. Icebergs of clear blue ice lie scattered along the shore, the aurora reflected in the wet sand and the calm water. Stars fill the dark sky, a snowy mountain ridge on the horizon. Long exposure, the sky sharp, the water smooth. Wide shot from a low angle, 14mm lens, deep depth of field, palette of emerald green, violet, ice blue and black."
+                },
+                {
+                    "titolo": {
+                        "it": "Risaie a terrazze",
+                        "en": "Rice terraces"
+                    },
+                    "testo": "A landscape photograph of curving rice terraces on a steep hillside in Yunnan at sunrise. The flooded paddies reflect the sky in shades of gold and pink, separated by thin green ridges. A few small farmhouses with grey tiled roofs sit among the terraces, a light mist in the valley. Soft low sun from behind the hills. Elevated wide shot, 70mm lens compressing the layers, deep depth of field, palette of gold, rose, emerald and silver water."
+                },
+                {
+                    "titolo": {
+                        "it": "Paese di mare colorato",
+                        "en": "Colorful seaside village"
+                    },
+                    "testo": "A travel photograph of a small Italian fishing village with tall narrow houses painted yellow, pink, ochre and pale green, stacked on a cliff above a tiny harbor. Wooden boats float on clear turquoise water, a breakwater of stones in the foreground. Laundry hangs from a few windows, terraced vineyards climb the hill behind. Clear late-morning sunlight, vivid colors and crisp shadows. Wide shot from the sea wall, 35mm lens, deep depth of field, Mediterranean palette of pastel facades and turquoise sea."
+                },
+                {
+                    "titolo": {
+                        "it": "Città di notte dall'alto",
+                        "en": "City at night from above"
+                    },
+                    "testo": "An aerial night photograph of a dense modern city seen from a high skyscraper. Grid streets glow with orange streetlights and red and white trails of car headlights, office towers lit in blue and white, a river crossing the scene with illuminated bridges. A faint blue band remains on the horizon after sunset. Long exposure, sharp buildings and smooth light trails. Wide shot looking down at 45 degrees, 24mm lens, palette of deep blue, amber and white."
+                },
+                {
+                    "titolo": {
+                        "it": "Lago alpino in autunno",
+                        "en": "Alpine lake in autumn"
+                    },
+                    "testo": "A calm autumn landscape photograph of a glassy alpine lake surrounded by golden larch trees. A wooden rowing boat is tied to a short dock in the foreground, the snowy peaks perfectly mirrored in the water. Thin morning mist drifts above the surface. Soft early sunlight touches the larches on the far shore. Wide shot at water level, 24mm lens, deep depth of field, palette of gold, deep blue water, white snow and weathered brown wood."
+                }
+            ]
+        },
+        {
+            "id": "interni",
+            "label": {
+                "it": "Interni e architettura",
+                "en": "Interiors and architecture"
+            },
+            "prompt": [
+                {
+                    "titolo": {
+                        "it": "Soggiorno scandinavo",
+                        "en": "Scandinavian living room"
+                    },
+                    "testo": "An interior design photograph of a bright Scandinavian living room with white walls and pale oak floors. A low grey linen sofa with wool cushions, a round oak coffee table with a ceramic vase of dried grasses, a sheepskin on a wooden chair and a large potted fiddle-leaf fig by the window. Big windows with sheer curtains let in soft daylight. Wide shot at eye level, 24mm lens, straight verticals, deep depth of field, calm palette of white, oak, light grey and soft green."
+                },
+                {
+                    "titolo": {
+                        "it": "Cucina toscana",
+                        "en": "Tuscan kitchen"
+                    },
+                    "testo": "An interior photograph of a rustic Tuscan farmhouse kitchen with exposed wooden ceiling beams and terracotta floor tiles. A long scrubbed wooden table with mismatched chairs, copper pots hanging above a large stone fireplace, a ceramic sink under a small window with green shutters, braids of garlic and a basket of lemons. Warm afternoon sun streams in from the window. Wide shot, 24mm lens, deep depth of field, palette of terracotta, copper, cream plaster and olive green."
+                },
+                {
+                    "titolo": {
+                        "it": "Biblioteca antica",
+                        "en": "Old library"
+                    },
+                    "testo": "An architectural interior photograph of a grand baroque library with two levels of carved walnut bookshelves filled with leather-bound books. A wooden gallery with a spiral staircase runs along the upper level, a painted ceiling with clouds and figures above. Long reading tables with green-shaded brass lamps run down the center. Soft daylight from tall arched windows mixes with the warm lamp glow. Symmetrical wide shot down the central aisle, 16mm lens, straight verticals, palette of walnut brown, gold and green."
+                },
+                {
+                    "titolo": {
+                        "it": "Loft industriale",
+                        "en": "Industrial loft"
+                    },
+                    "testo": "An interior photograph of a spacious industrial loft in a converted factory, with exposed red brick walls, black steel-framed windows and a polished concrete floor. A cognac leather sofa faces a vintage wooden trunk used as a coffee table, Edison bulbs hang on long cords, a large abstract painting leans against the wall and a bicycle hangs by the entrance. Late-afternoon light enters through the big windows in long rectangles. Wide shot, 20mm lens, palette of brick red, black steel, cognac and grey concrete."
+                },
+                {
+                    "titolo": {
+                        "it": "Bagno in marmo",
+                        "en": "Marble bathroom"
+                    },
+                    "testo": "A luxury interior photograph of a bathroom clad in white Calacatta marble with bold grey veining. A freestanding oval stone bathtub sits under a tall window, a brushed brass floor-standing faucet beside it, a wooden stool with folded white towels and a small vase with one green branch. Soft diffuse daylight through a frosted glass window, gentle reflections on the polished stone. Wide shot at eye level, 24mm lens, straight verticals, minimal palette of white, grey veins, brass and a touch of green."
+                },
+                {
+                    "titolo": {
+                        "it": "Casa di vetro nel bosco",
+                        "en": "Glass cabin in the woods"
+                    },
+                    "testo": "An architectural photograph of a small modern cabin with floor-to-ceiling glass walls and a dark timber frame, standing on stilts in a snowy pine forest at dusk. Inside, warm light reveals a wood-burning stove, a sofa with blankets and bookshelves. Snow lies thick on the flat roof and on the branches around. The blue hour sky contrasts with the warm interior. Wide shot from outside at a slight low angle, 24mm lens, deep depth of field, palette of deep blue, white snow and warm orange light."
+                },
+                {
+                    "titolo": {
+                        "it": "Caffè parigino",
+                        "en": "Parisian café"
+                    },
+                    "testo": "An interior photograph of a classic Parisian café with dark wooden paneling, large mirrors with gilded frames and a long zinc bar. Small round marble tables with bentwood chairs line the red leather banquettes, a waiter in a white apron carries a tray in the background. Globe lamps glow warmly, and rainy grey daylight comes through the front windows. Wide shot from a corner, 24mm lens, deep depth of field, palette of dark wood, red leather, brass and warm amber."
+                },
+                {
+                    "titolo": {
+                        "it": "Navata gotica",
+                        "en": "Gothic nave"
+                    },
+                    "testo": "An architectural photograph of the nave of a Gothic cathedral with soaring pointed arches and ribbed vaults. Tall stained glass windows on the left throw patches of blue, red and gold light onto the stone columns and the floor. Rows of wooden pews lead toward the altar, faint incense haze in the air catching the light. Symmetrical shot from the center of the aisle, 16mm lens, straight verticals, deep depth of field, palette of grey stone and jewel-colored light."
+                },
+                {
+                    "titolo": {
+                        "it": "Stanza giapponese",
+                        "en": "Japanese room"
+                    },
+                    "testo": "An interior photograph of a traditional Japanese room with tatami mats, sliding shoji paper screens and a low wooden table with a cast iron teapot and two cups. A tokonoma alcove holds a hanging scroll with a painted branch and a single flower in a ceramic vase. One screen is open onto a small garden with moss, stones and a maple tree. Soft daylight filtered through the paper screens. Eye-level wide shot from a seated height, 28mm lens, calm palette of straw, pale wood, white paper and green."
+                },
+                {
+                    "titolo": {
+                        "it": "Scala a chiocciola",
+                        "en": "Spiral staircase"
+                    },
+                    "testo": "An architectural photograph looking straight down a white spiral staircase in an old building, the steps winding in a perfect curve around an open well. A dark wooden handrail follows the spiral, the black and white checkered floor visible at the bottom. Soft light from a skylight above illuminates the white walls with smooth gradients. Top-down shot, 16mm lens, symmetrical composition, deep depth of field, minimal palette of white, black and warm wood."
+                }
+            ]
+        },
+        {
+            "id": "animali",
+            "label": {
+                "it": "Animali",
+                "en": "Animals"
+            },
+            "prompt": [
+                {
+                    "titolo": {
+                        "it": "Volpe nella neve",
+                        "en": "Fox in the snow"
+                    },
+                    "testo": "A wildlife photograph of a red fox sitting in fresh deep snow, its thick orange winter coat dusted with flakes and its bushy tail wrapped around its paws. It looks straight at the camera with amber eyes. Snow falls softly, the background is a blurred line of dark pine trees. Soft overcast light, gentle shadows. Eye-level close-up from snow height, 400mm telephoto lens, very shallow depth of field, palette of rust orange, white and dark green."
+                },
+                {
+                    "titolo": {
+                        "it": "Gatto alla finestra",
+                        "en": "Cat at the window"
+                    },
+                    "testo": "A cozy photograph of a fluffy grey tabby cat sitting on a wooden windowsill and looking out at falling rain. Raindrops run down the glass, the street outside blurred into soft grey and green. A small potted succulent and a folded knitted blanket beside the cat. Cool soft daylight from the window outlining the fur, the room behind in warm shadow. Medium shot from behind and slightly to the side, 50mm lens, shallow depth of field, palette of grey fur, cool blue and warm wood."
+                },
+                {
+                    "titolo": {
+                        "it": "Leone nella savana",
+                        "en": "Lion in the savanna"
+                    },
+                    "testo": "A wildlife photograph of a male lion with a full dark mane lying on a rocky outcrop in the Serengeti, gazing toward the horizon. Golden grass stretches below, a few acacia trees dot the plain under a pale sky with scattered clouds. Warm late-afternoon light from the side highlights the mane and the muscles. Low-angle medium shot, 300mm telephoto lens, sharp eyes and whiskers, warm palette of gold, tawny brown and soft blue."
+                },
+                {
+                    "titolo": {
+                        "it": "Colibrì sul fiore",
+                        "en": "Hummingbird at a flower"
+                    },
+                    "testo": "A macro wildlife photograph of a ruby-throated hummingbird hovering in front of a red trumpet flower, its long beak just inside the bloom. The wings are frozen in mid-beat, the throat feathers shine iridescent red and emerald. The background is a smooth blur of green leaves. Bright soft daylight from the front, a small catchlight in the bird's black eye. Side close-up, 400mm lens with fast shutter, very shallow depth of field, palette of emerald, ruby red and soft green."
+                },
+                {
+                    "titolo": {
+                        "it": "Cane sulla spiaggia",
+                        "en": "Dog on the beach"
+                    },
+                    "testo": "An energetic photograph of a golden retriever running along the edge of the sea on a sandy beach, ears flying, mouth open in a happy expression. Water splashes from its paws in bright droplets. Behind, small waves and a pale sky at sunset. Warm low sun from behind creating a golden rim on the fur. Low-angle shot at the dog's height, 200mm lens, fast shutter freezing the splash, shallow depth of field, palette of gold, peach and soft blue."
+                },
+                {
+                    "titolo": {
+                        "it": "Polpo sulla barriera",
+                        "en": "Octopus on the reef"
+                    },
+                    "testo": "An underwater photograph of an octopus spreading its arms over a coral reef in clear tropical water. Its skin shows textured patterns in orange and cream, suckers visible along the curled arms. Around it, purple sea fans, yellow coral and small blue fish. Sunlight filters from the surface in rippling rays. Close-up wide-angle shot at reef level, 16mm fisheye lens, strobe light revealing the colors in the foreground, palette of turquoise, orange, purple and yellow."
+                },
+                {
+                    "titolo": {
+                        "it": "Gufo nel bosco",
+                        "en": "Owl in the forest"
+                    },
+                    "testo": "A night wildlife photograph of a tawny owl perched on a mossy branch in a dark forest. Its round face, mottled brown feathers and large black eyes face the camera. Behind, a few tree trunks fade into deep blue darkness, a thin moon partly visible through the branches. Soft cool moonlight from above with a gentle warm fill light on the owl. Medium close-up, 300mm lens, shallow depth of field, palette of brown, moss green and night blue."
+                },
+                {
+                    "titolo": {
+                        "it": "Cavalli al galoppo",
+                        "en": "Galloping horses"
+                    },
+                    "testo": "A dynamic photograph of a herd of wild horses galloping across a shallow river in a wide valley, water exploding in white spray around their legs. Chestnut, black and grey horses with flowing manes, dust and droplets backlit by the low sun. Hills covered in dry grass in the background. Fast shutter freezing the motion. Side wide shot at water level, 200mm lens, palette of warm browns, white spray and golden light."
+                },
+                {
+                    "titolo": {
+                        "it": "Rana sulla foglia",
+                        "en": "Tree frog on a leaf"
+                    },
+                    "testo": "A macro photograph of a bright green tree frog with red eyes and orange toes clinging to a large wet leaf in a rainforest. Water droplets cover the leaf and the frog's smooth skin. The background is a dark green blur with soft round highlights. Soft diffused flash from the side, crisp details on the eyes and toe pads. Close-up at eye level, 100mm macro lens, very shallow depth of field, palette of vivid green, red and orange on dark green."
+                },
+                {
+                    "titolo": {
+                        "it": "Panda rosso",
+                        "en": "Red panda"
+                    },
+                    "testo": "A charming wildlife photograph of a red panda resting on a mossy tree branch in a misty bamboo forest. Its russet fur, white face markings and long striped tail hanging down are clear and detailed, its eyes half closed. Soft fog behind it, thin bamboo stems fading into white. Diffused overcast light, very soft shadows. Medium close-up at branch level, 300mm lens, shallow depth of field, palette of russet red, moss green and pale grey."
+                }
+            ]
+        },
+        {
+            "id": "fantasy",
+            "label": {
+                "it": "Fantasy",
+                "en": "Fantasy"
+            },
+            "prompt": [
+                {
+                    "titolo": {
+                        "it": "Drago sul castello",
+                        "en": "Dragon over the castle"
+                    },
+                    "testo": "A cinematic fantasy illustration rendered like a photograph: an enormous bronze dragon with tattered wings circles above a medieval castle on a rocky cliff at dusk. Smoke curls from its nostrils, its scales catching the last orange light. Tiny archers line the castle walls, torches burning along the towers. Storm clouds gather behind, a sea crashes against the cliff below. Wide shot from the ground looking up, 24mm lens, dramatic scale, palette of bronze, burnt orange and stormy blue-grey."
+                },
+                {
+                    "titolo": {
+                        "it": "Biblioteca del mago",
+                        "en": "Wizard's library"
+                    },
+                    "testo": "A fantasy interior scene of a cluttered wizard's library inside a round stone tower. Shelves of old books rise to the ceiling, a brass telescope points out of an arched window at a starry night, glowing blue potions bubble on a wooden desk among scrolls and a quill. A few books float in the air, pages turning by themselves, tiny sparks of light drifting around them. Warm candlelight mixed with the cold blue glow of the potions. Wide shot, 24mm lens, palette of amber, deep blue and leather brown."
+                },
+                {
+                    "titolo": {
+                        "it": "Bosco dei funghi luminosi",
+                        "en": "Glowing mushroom forest"
+                    },
+                    "testo": "A fantasy landscape at night: a dense ancient forest where giant mushrooms glow in soft turquoise and violet light. Moss covers twisted roots, small fireflies float in the air, a narrow stream reflects the glowing caps. A tiny lantern-lit wooden bridge crosses the stream in the middle ground. Light comes only from the mushrooms and the fireflies, deep shadows elsewhere. Wide shot at ground level, 24mm lens, shallow mist, magical palette of turquoise, violet and dark green."
+                },
+                {
+                    "titolo": {
+                        "it": "Guerriera elfa",
+                        "en": "Elf warrior"
+                    },
+                    "testo": "A fantasy portrait of an elf warrior woman with dark brown skin, long silver hair in braids and pointed ears, standing in an autumn forest. She wears leaf-patterned bronze armor over a forest-green tunic and holds a curved longbow, a quiver of white-feathered arrows on her back. Her expression is calm and alert. Golden leaves fall around her, soft sunbeams through the trees. Medium shot, 85mm lens, shallow depth of field, palette of bronze, forest green and autumn gold."
+                },
+                {
+                    "titolo": {
+                        "it": "Città tra le nuvole",
+                        "en": "City in the clouds"
+                    },
+                    "testo": "A fantasy cityscape of white marble towers with golden domes floating on giant islands of rock above a sea of clouds. Waterfalls spill from the edges of the islands and dissolve into mist. Airships with canvas sails and wooden hulls travel between the towers, connected by long arched bridges. Bright morning sun, soft pink and gold light on the clouds. Wide aerial shot, 35mm lens, deep depth of field, palette of white marble, gold, pale pink and sky blue."
+                },
+                {
+                    "titolo": {
+                        "it": "Mercato dei maghi",
+                        "en": "Wizards' market"
+                    },
+                    "testo": "A busy fantasy market street at dusk in a crooked medieval town. Stalls sell glowing crystals, potion bottles, dragon eggs in straw and hanging dried herbs. Robed customers of different ages and folk, a dwarf merchant with a braided beard and a tall woman with a raven on her shoulder. Paper lanterns and floating orbs of light hang above the crowd. Warm lantern light against the deep blue evening sky. Wide shot at eye level, 28mm lens, lively and detailed, palette of amber, teal and purple."
+                },
+                {
+                    "titolo": {
+                        "it": "Villaggio sull'albero gigante",
+                        "en": "Giant tree village"
+                    },
+                    "testo": "A fantasy scene of a colossal ancient tree with a whole village built into its branches: round wooden houses with moss roofs, rope bridges, spiral staircases around the trunk and small lit windows. A waterfall pours from a hollow in the trunk into a pool at its roots. Tiny figures walk the bridges. Golden afternoon light through the leaves, soft haze. Wide shot from the ground, 20mm lens, deep depth of field, palette of moss green, warm wood and golden light."
+                },
+                {
+                    "titolo": {
+                        "it": "Sirena nella grotta",
+                        "en": "Mermaid in a sea cave"
+                    },
+                    "testo": "A fantasy scene of a mermaid sitting on a rock inside a sea cave, her long dark wavy hair falling over her shoulders and her tail covered in teal and silver scales. Sunlight enters through an opening in the cave roof, a beam lighting the clear turquoise water and the pearls and shells around her. Her skin is olive and her expression curious. Wide shot at water level, 24mm lens, reflections on the wet rock, palette of turquoise, teal, silver and warm rock."
+                },
+                {
+                    "titolo": {
+                        "it": "Golem tra le rovine",
+                        "en": "Golem in the ruins"
+                    },
+                    "testo": "A fantasy scene of a giant stone golem kneeling among overgrown temple ruins, its body made of carved grey blocks covered in moss and small flowers, glowing amber runes along its arms and chest. A young traveler with a backpack stands in front of it for scale, looking up. Vines hang from broken columns, mist in the jungle behind. Soft diffused light with the warm glow of the runes. Low-angle wide shot, 24mm lens, palette of grey stone, moss green and amber."
+                },
+                {
+                    "titolo": {
+                        "it": "Isola sospesa",
+                        "en": "Floating island"
+                    },
+                    "testo": "A fantasy landscape of a small island of grass and rock floating in the sky above a misty valley, with a single cherry tree in bloom and a tiny cottage on top. A thin waterfall spills from its edge and turns into rain before reaching the ground. Small birds circle around it. Soft sunrise light from the left, pink petals drifting in the wind. Wide shot, 50mm lens, deep depth of field, dreamy palette of pink blossoms, fresh green and pale gold sky."
+                }
+            ]
+        },
+        {
+            "id": "fantascienza",
+            "label": {
+                "it": "Fantascienza",
+                "en": "Science fiction"
+            },
+            "prompt": [
+                {
+                    "titolo": {
+                        "it": "Città cyberpunk sotto la pioggia",
+                        "en": "Cyberpunk city in the rain"
+                    },
+                    "testo": "A cinematic science fiction photograph of a crowded street in a future megacity at night in heavy rain. Huge holographic billboards in pink and cyan float between dark towers, flying cars cross the sky, food stalls with steam line the street. A woman in a glowing transparent raincoat walks toward the camera among people with umbrellas. Wet asphalt reflects all the neon. Medium wide shot at eye level, 35mm lens, shallow depth of field, palette of magenta, cyan and deep black."
+                },
+                {
+                    "titolo": {
+                        "it": "Astronauta su Marte",
+                        "en": "Astronaut on Mars"
+                    },
+                    "testo": "A realistic science fiction photograph of an astronaut in a white and orange spacesuit walking across the rusty red surface of Mars. Dust swirls around the boots, a six-wheeled rover and a small dome habitat stand behind. Layered cliffs and a pale salmon sky with a small distant sun. The helmet visor reflects the landscape. Low-angle wide shot, 24mm lens, deep depth of field, palette of rust red, ochre, white and faint blue shadows."
+                },
+                {
+                    "titolo": {
+                        "it": "Stazione spaziale",
+                        "en": "Space station"
+                    },
+                    "testo": "A science fiction interior photograph of the observation deck of a space station. A curved window shows the Earth below with clouds and a thin blue atmosphere line. Two crew members in grey flight suits float near the window, one holding a tablet. White padded walls, handrails, cables and blinking control panels. Cool white interior light mixed with the warm sunlight reflected from the Earth. Wide shot, 20mm lens, deep depth of field, palette of white, grey, ocean blue and warm highlights."
+                },
+                {
+                    "titolo": {
+                        "it": "Robot giardiniere",
+                        "en": "Gardener robot"
+                    },
+                    "testo": "A gentle science fiction scene of an old rounded robot with scratched white paint and one round blue lens eye watering plants in a rooftop garden. It holds a small copper watering can, tomato plants and sunflowers grow in wooden crates around it. A city skyline with wind turbines is visible behind. Soft morning sunlight, light dew on the leaves. Medium shot, 50mm lens, shallow depth of field, warm and hopeful palette of white, copper, green and yellow."
+                },
+                {
+                    "titolo": {
+                        "it": "Astronave nell'hangar",
+                        "en": "Spaceship in the hangar"
+                    },
+                    "testo": "A science fiction photograph of a sleek dark grey spaceship parked in a huge hangar, its angular hull covered in panel lines and small warning decals. Mechanics in orange coveralls work on an open engine, sparks falling from a welding torch. Floodlights hang from the high ceiling, a big open door shows a desert planet at dusk outside. Mixed lighting of cold white floodlights and warm sunset. Wide shot from a low angle, 24mm lens, palette of graphite, orange and dusk purple."
+                },
+                {
+                    "titolo": {
+                        "it": "Colonia sul pianeta di ghiaccio",
+                        "en": "Ice planet colony"
+                    },
+                    "testo": "A science fiction landscape of a small research colony on a frozen planet: white modular habitats connected by tubes, antennas with red lights and solar panels half covered in snow. A tracked vehicle leaves a trail across the ice. A huge ringed planet hangs low in the pale green sky, two tiny moons above. Cold low sun casting long blue shadows. Wide shot, 35mm lens, deep depth of field, palette of icy white, pale green and blue."
+                },
+                {
+                    "titolo": {
+                        "it": "Ritratto di androide",
+                        "en": "Android portrait"
+                    },
+                    "testo": "A close-up science fiction portrait of a female android with a realistic human face of East African features and a section of her cheek and temple open to show fine gold circuitry and tiny glowing blue lights. Short black hair, calm eyes looking slightly off camera. Smooth skin with very fine detail, the seam between skin and metal precise. Soft studio light from the left, a cool blue rim light from behind. Head-and-shoulders, 85mm lens, palette of warm skin, gold and cool blue."
+                },
+                {
+                    "titolo": {
+                        "it": "Deserto con due soli",
+                        "en": "Desert with two suns"
+                    },
+                    "testo": "A science fiction landscape of an alien desert with smooth orange dunes and tall rock arches, under two suns setting side by side on the horizon. Each rock casts two shadows in different directions. A lone traveler in a hooded sand-colored cloak leads a large six-legged pack animal along a ridge. Thin pink clouds in a violet sky. Wide shot, 50mm lens, deep depth of field, palette of orange, violet and pale gold."
+                },
+                {
+                    "titolo": {
+                        "it": "Mecha tra le rovine",
+                        "en": "Mech in the ruins"
+                    },
+                    "testo": "A science fiction scene of a giant bipedal mech in battered olive green armor walking through the ruins of a city, crushing rubble under its feet. Smoke rises from a burning building, a broken highway bridge in the background. Small soldiers run along the street for scale. Overcast grey light with a warm glow from the fire. Low-angle wide shot, 24mm lens, deep depth of field, palette of olive, rust, grey smoke and orange fire."
+                },
+                {
+                    "titolo": {
+                        "it": "Laboratorio del futuro",
+                        "en": "Future laboratory"
+                    },
+                    "testo": "A clean science fiction interior of a futuristic biology laboratory with white curved walls and glass partitions. A scientist of Latin American origin in her forties, in a white lab coat and clear goggles, studies a glowing green plant floating inside a cylindrical glass tank. Holographic data panels float in the air beside her. Bright soft white light from the ceiling, the green glow reflecting on her face. Medium shot, 35mm lens, shallow depth of field, palette of white, glass blue and luminous green."
+                }
+            ]
+        },
+        {
+            "id": "poster",
+            "label": {
+                "it": "Poster e scritte",
+                "en": "Posters and lettering"
+            },
+            "prompt": [
+                {
+                    "titolo": {
+                        "it": "Locandina concerto jazz",
+                        "en": "Jazz concert poster"
+                    },
+                    "testo": "A vertical jazz concert poster in a 1960s mid-century graphic style. At the top, the title \"NAPOLI JAZZ\" in large bold condensed white capitals on a deep navy background, centered. In the middle, a flat stylized illustration of a trumpet player in silhouette with orange and mustard geometric shapes behind him. At the bottom, \"21 GIUGNO\" in smaller mustard yellow capitals, centered. Palette of navy, orange, mustard and cream, slight paper grain and halftone texture, wide margins."
+                },
+                {
+                    "titolo": {
+                        "it": "Poster di viaggio vintage",
+                        "en": "Vintage travel poster"
+                    },
+                    "testo": "A vertical vintage travel poster in 1930s lithograph style. A flat illustration of a cliffside coastal town with pastel houses, lemon trees and a turquoise sea with a small sailboat. At the top, \"AMALFI\" in large rounded art deco letters in deep red with a cream outline, centered. At the bottom, \"COSTIERA ITALIANA\" in small cream capitals on a dark blue band. Palette of turquoise, lemon yellow, coral red and cream, visible print texture, simple shapes and long shadows."
+                },
+                {
+                    "titolo": {
+                        "it": "Menu sulla lavagna",
+                        "en": "Chalkboard menu"
+                    },
+                    "testo": "A photograph of a black chalkboard menu hanging on a brick wall in a small trattoria. Hand-drawn chalk lettering: at the top \"MENU DEL GIORNO\" in large decorative white letters with a small drawn line of leaves below. Underneath, three lines in neat chalk handwriting: \"Lasagne al forno\", \"Pollo arrosto\", \"Tiramisù\", each followed by a small price. Small chalk drawings of a fork and a wine glass in the corners. Soft warm light from a lamp above, slight chalk dust texture, eye-level shot, 50mm lens."
+                },
+                {
+                    "titolo": {
+                        "it": "Copertina di romanzo",
+                        "en": "Novel cover"
+                    },
+                    "testo": "A vertical book cover design. Background: a soft watercolor illustration of a winter garden with bare trees, a wrought iron gate and a single red rose in the snow. At the top, the title \"IL GIARDINO D'INVERNO\" in elegant thin serif capitals in dark green, centered. At the bottom, the author name \"Lucia Ferri\" in small italic dark grey letters, centered. Lots of white space, palette of white, pale grey-blue, dark green and one touch of red, fine paper texture."
+                },
+                {
+                    "titolo": {
+                        "it": "Insegna al neon",
+                        "en": "Neon sign"
+                    },
+                    "testo": "A night photograph of a pink neon sign mounted on a dark brick wall above a small bar door. The sign reads \"APERTO\" in glowing pink cursive script, with a small neon cocktail glass beside the word. The light spills onto the wet pavement and the brick, a few rain drops shine in the glow. Close-up at a slight upward angle, 35mm lens, shallow depth of field, palette of hot pink, dark brick red and black."
+                },
+                {
+                    "titolo": {
+                        "it": "Etichetta di vino",
+                        "en": "Wine label"
+                    },
+                    "testo": "A product photograph of a dark green wine bottle with a cream textured paper label, standing on a rustic wooden barrel in a cellar. The label shows a fine line drawing of hills with vineyards, above it the name \"Rosso di Collina\" in elegant black serif letters, and below \"2021\" in small gold numerals, all centered. Warm soft side light, the barrels and arched brick ceiling blurred behind. Close-up at eye level, 85mm lens, shallow depth of field, palette of bottle green, cream, black and gold."
+                },
+                {
+                    "titolo": {
+                        "it": "Poster di film di fantascienza",
+                        "en": "Sci-fi movie poster"
+                    },
+                    "testo": "A vertical science fiction movie poster. A lone astronaut stands small at the bottom on a dark rocky surface, looking up at a huge glowing blue planet with rings that fills most of the frame. At the top, the title \"ORBITA\" in wide futuristic white letters with generous spacing, centered. At the very bottom, a small line \"PROSSIMAMENTE\" in thin light grey capitals. Deep black space with a few stars, cinematic contrast, palette of black, electric blue and white."
+                },
+                {
+                    "titolo": {
+                        "it": "Biglietto di compleanno",
+                        "en": "Birthday card"
+                    },
+                    "testo": "A flat lay photograph of a handmade birthday card on a light wooden table. The card shows a cheerful watercolor illustration of colorful balloons and confetti, with the words \"Buon Compleanno\" in large playful brush lettering in coral pink across the middle. Around the card, a kraft paper envelope, a small wrapped gift with a ribbon and scattered paper confetti. Bright soft daylight, top-down shot, 50mm lens, cheerful palette of coral, sky blue, yellow and kraft brown."
+                },
+                {
+                    "titolo": {
+                        "it": "Volantino della palestra",
+                        "en": "Gym flyer"
+                    },
+                    "testo": "A vertical gym advertising flyer with a bold modern design. A high-contrast photograph of a muscular woman in her thirties doing battle ropes, cut out on a bright electric yellow background. At the top, \"ALLENATI CON NOI\" in huge heavy black italic sans-serif capitals, aligned left. At the bottom, a black band with \"PROVA GRATUITA\" in white bold capitals. Strong diagonal composition, palette of electric yellow, black and white."
+                },
+                {
+                    "titolo": {
+                        "it": "Copertina di rivista di cucina",
+                        "en": "Cooking magazine cover"
+                    },
+                    "testo": "A vertical cooking magazine cover. A bright overhead photograph of a rustic table with a big bowl of spaghetti with tomato sauce and basil, a wedge of parmesan and a glass of red wine. At the top, the masthead \"CUCINA\" in large elegant red serif capitals across the full width. In the lower left, a short headline \"Ricette d'estate\" in white bold sans-serif on a small red label. Clean layout, natural daylight, palette of tomato red, basil green, white and warm wood."
+                }
+            ]
+        }
+    ]
+}
