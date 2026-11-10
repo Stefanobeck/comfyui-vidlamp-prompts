@@ -539,7 +539,10 @@ class VidlampPromptSheet:
         print(f"{LOG} sheet saved: {os.path.join(full, base + '.png')} (+ .csv, .xlsx)")
 
         tensor = torch.from_numpy(np.asarray(sheet).astype(np.float32) / 255.0)[None,]
-        return {"ui": {"images": [{"filename": base + ".png", "subfolder": sub, "type": "output"}]},
+        # "vidlamp_files": the Excel and CSV files, so Vidlamp can save them with the creation (10/11/2026)
+        files = [{"filename": base + ext, "subfolder": sub, "type": "output"} for ext in (".xlsx", ".csv")]
+        return {"ui": {"images": [{"filename": base + ".png", "subfolder": sub, "type": "output"}],
+                       "vidlamp_files": files},
                 "result": (tensor,)}
 
 
@@ -659,7 +662,10 @@ class VidlampPromptSheetCompare:
               f"{len(columns)} models: {', '.join(l for l, _ in columns)}")
 
         tensor = torch.from_numpy(np.asarray(sheet).astype(np.float32) / 255.0)[None,]
-        return {"ui": {"images": [{"filename": base + ".png", "subfolder": sub, "type": "output"}]},
+        # "vidlamp_files": the Excel and CSV files, so Vidlamp can save them with the creation (10/11/2026)
+        files = [{"filename": base + ext, "subfolder": sub, "type": "output"} for ext in (".xlsx", ".csv")]
+        return {"ui": {"images": [{"filename": base + ".png", "subfolder": sub, "type": "output"}],
+                       "vidlamp_files": files},
                 "result": (tensor,)}
 
 
