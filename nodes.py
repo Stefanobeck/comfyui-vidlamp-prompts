@@ -74,6 +74,16 @@ def _open_output_folder(prefix, subfolder, filename, remote):
     return {"opened": True, "path": folder}
 
 
+def _annuncia(payload):
+    """(10/11/2026, the user: "I want to see in the GUI the prompt used at that moment") the prompts go out on
+    ComfyUI's progress channel ("vidlamp.prompts"): Vidlamp shows them while the pictures are made. Never blocks."""
+    try:
+        from server import PromptServer
+        PromptServer.instance.send_sync("vidlamp.prompts", payload)
+    except Exception:
+        pass
+
+
 def _register_route():
     """GET /vidlamp_prompts/models?engine=Ollama&url=...: the browser fills the model menu when the engine changes."""
     try:
@@ -186,6 +196,7 @@ class VidlampPromptSeries:
                                                           "between them. The Prompt Rewrite nodes still adapt them "
                                                           "to each model if their mode is on."}),
             },
+            "hidden": {"unique_id": "UNIQUE_ID"},
         }
 
     def check_lazy_status(self, engine, clip=None, **kwargs):
@@ -199,7 +210,7 @@ class VidlampPromptSeries:
 
     def run(self, idea, target, category, style, count, mode, engine, frame, strange_mix, seed, clip=None,
             trigger_words="", server_model=servers.AUTO, server_url="", system_prompt="", temperature=1.0, max_length=700,
-            use_as_written=False):
+            use_as_written=False, unique_id=None):
         plan = series.Plan(idea, target, category, style, count, mode, strange_mix, seed, trigger_words, frame)
         start = time.time()
         if use_as_written:
@@ -229,6 +240,7 @@ class VidlampPromptSeries:
         numbered = "\n\n".join(f"{i + 1}. {p}" for i, p in enumerate(prompts))
         text_engine = {"engine": engine, "clip": clip, "server_model": server_model, "server_url": server_url,
                        "temperature": temperature, "max_length": max_length, "frame": frame, "seed": seed}
+        _annuncia({"kind": "series", "node": str(unique_id or ""), "prompts": prompts})
         return {"ui": {"text": [numbered]}, "result": (prompts, numbered, len(prompts), text_engine)}
 
 
@@ -262,14 +274,17 @@ class VidlampPromptRewrite:
                                                         "target every time you change target. Empty = the rules of "
                                                         "the target."}),
             },
+            "hidden": {"unique_id": "UNIQUE_ID"},
         }
 
-    def run(self, prompts, text_engine, target, enabled, system_prompt=None):
+    def run(self, prompts, text_engine, target, enabled, system_prompt=None, unique_id=None):
         target, enabled = target[0], enabled[0]
+        node = str((unique_id or [""])[0] or "")
         cfg = text_engine[0]
         system = (system_prompt or [""])[0]
         prompts = [str(p) for p in prompts]
         if not enabled:
+            _annuncia({"kind": "rewrite", "node": node, "model": target, "prompts": prompts})
             return (prompts,)
         engine = cfg["engine"]
         start = time.time()
@@ -293,6 +308,7 @@ class VidlampPromptRewrite:
                   f"with: the prompts pass unchanged")
             return (prompts,)
         print(f"[Vidlamp Prompt Rewrite] {len(out)} prompts for {target} in {time.time() - start:.1f} s ({engine})")
+        _annuncia({"kind": "rewrite", "node": node, "model": target, "prompts": out})
         return (out,)
 
 

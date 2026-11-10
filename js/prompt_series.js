@@ -3,6 +3,7 @@
 // and show me the list of models"). If the program does not answer, a message says what to do.
 import { app } from "../../scripts/app.js";
 import { api } from "../../scripts/api.js";
+import { ComfyWidgets } from "../../scripts/widgets.js";
 
 const AUTO = "auto (first installed)";
 const SERVERS = ["Ollama", "LM Studio"];
@@ -173,6 +174,30 @@ app.registerExtension({
       const r = executed?.apply(this, arguments);
       const img = message?.images?.[0];
       if (img) this._vidlampLast = { filename: img.filename, subfolder: img.subfolder };
+      return r;
+    };
+  },
+});
+
+// Sheet Creator: after Run, the prompts written are shown inside the node, read only, at the bottom (10/11/2026, the
+// user: "see the prompt used"). Not saved in the workflow (it would shift the saved widget values).
+app.registerExtension({
+  name: "vidlamp.promptSeriesShow",
+  async beforeRegisterNodeDef(nodeType, nodeData) {
+    if (nodeData.name !== "VidlampPromptSeries") return;
+    const executed = nodeType.prototype.onExecuted;
+    nodeType.prototype.onExecuted = function (message) {
+      const r = executed?.apply(this, arguments);
+      const text = (message?.text || []).join("\n\n");
+      let w = this.widgets?.find((x) => x.name === "written_prompts");
+      if (!w) {
+        w = ComfyWidgets.STRING(this, "written_prompts", ["STRING", { multiline: true }], app).widget;
+        w.serialize = false;
+        if (w.options) w.options.serialize = false;
+        if (w.inputEl) { w.inputEl.readOnly = true; w.inputEl.style.opacity = 0.85; }
+      }
+      w.value = text;
+      this.setDirtyCanvas(true, true);
       return r;
     };
   },
