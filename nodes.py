@@ -178,6 +178,13 @@ class VidlampPromptSeries:
                                           "tooltip": "Text model only: higher = more varied ideas."}),
                 "max_length": ("INT", {"default": 700, "min": 64, "max": 4096,
                                        "tooltip": "ComfyUI text model only: the longest answer in tokens."}),
+                # last on purpose: saved workflows keep their widget values in order (10/11/2026, the user: "let the
+                # user switch the prompt generator off and test what he writes on every model")
+                "use_as_written": ("BOOLEAN", {"default": False,
+                                               "tooltip": "On: what you write in 'idea' IS the prompt, word for word "
+                                                          "(no text model). Several prompts: leave an empty line "
+                                                          "between them. The Prompt Rewrite nodes still adapt them "
+                                                          "to each model if their mode is on."}),
             },
         }
 
@@ -191,10 +198,14 @@ class VidlampPromptSeries:
         return True
 
     def run(self, idea, target, category, style, count, mode, engine, frame, strange_mix, seed, clip=None,
-            trigger_words="", server_model=servers.AUTO, server_url="", system_prompt="", temperature=1.0, max_length=700):
+            trigger_words="", server_model=servers.AUTO, server_url="", system_prompt="", temperature=1.0, max_length=700,
+            use_as_written=False):
         plan = series.Plan(idea, target, category, style, count, mode, strange_mix, seed, trigger_words, frame)
         start = time.time()
-        if engine == "Presets (no AI)":
+        if use_as_written:
+            prompts = series.as_written(idea, trigger_words)
+            print(f"{LOG} {len(prompts)} prompts used as written (no text model)")
+        elif engine == "Presets (no AI)":
             prompts = series.presets_series(plan, log=lambda t: print(f"{LOG} {t}"))
         elif engine == "ComfyUI text model":
             if clip is None:

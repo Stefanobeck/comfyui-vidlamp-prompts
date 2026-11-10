@@ -1,7 +1,7 @@
 [project]
 name = "comfyui-vidlamp-prompts"
 description = "Test a whole series of prompts in one run, on one model or side by side on many. Prompt Sheet Creator writes N prompts for your model (Z-Image, Krea 2, FLUX.2/FLUX 3 Klein, Qwen-Image, Boogu, ERNIE, MOSS, SDXL, Anima, NetaYume, LTX-2.3/2.5) from a few words or from presets and styles, with no AI, a text model inside ComfyUI, Ollama or LM Studio. Prompt Rewrite adapts them to each model. Prompt Sheet and Prompt Sheet Compare put the pictures side by side with their prompts and save PNG, Excel and CSV."
-version = "0.1.0"
+version = "0.1.1"
 license = { file = "LICENSE" }
 dependencies = []
 

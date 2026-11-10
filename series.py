@@ -452,3 +452,14 @@ def rewrite_series(prompts, target, generate, frame="Landscape 16:9", seed=42, s
         log(f"[Vidlamp Prompt Rewrite] {target} {i + 1}/{len(prompts)}: {text[:90]}...")
         out.append(text)
     return out
+
+
+def as_written(idea, trigger_words=""):
+    """The user's own prompts, word for word: one per paragraph (an empty line between them). 10/11/2026, the user:
+    "if the user writes his prompt it is always reworked: let him switch the generator off and test his prompt"."""
+    parts = [p.strip() for p in re.split(r"\n\s*\n", str(idea or "").strip()) if p.strip()]
+    if not parts:
+        raise ValueError("'Use my text as the prompt' is on but the idea box is empty: write your prompt there "
+                         "(several prompts: an empty line between them).")
+    tw = str(trigger_words or "").strip()
+    return [p if not tw or p.lower().startswith(tw.lower()) else f"{tw}, {p}" for p in parts]
