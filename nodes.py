@@ -195,6 +195,10 @@ class VidlampPromptSeries:
                                                           "(no text model). Several prompts: leave an empty line "
                                                           "between them. The Prompt Rewrite nodes still adapt them "
                                                           "to each model if their mode is on."}),
+                "random_ingredients": ("BOOLEAN", {"default": True,
+                                                   "tooltip": "On: each scene gets a random place, time, mood and "
+                                                              "twist around your idea. Off: only your idea and the "
+                                                              "style, developed faithfully, nothing invented."}),
             },
             "hidden": {"unique_id": "UNIQUE_ID"},
         }
@@ -210,11 +214,12 @@ class VidlampPromptSeries:
 
     def run(self, idea, target, category, style, count, mode, engine, frame, strange_mix, seed, clip=None,
             trigger_words="", server_model=servers.AUTO, server_url="", system_prompt="", temperature=1.0, max_length=700,
-            use_as_written=False, unique_id=None):
-        plan = series.Plan(idea, target, category, style, count, mode, strange_mix, seed, trigger_words, frame)
+            use_as_written=False, random_ingredients=True, unique_id=None):
+        plan = series.Plan(idea, target, category, style, count, mode, strange_mix, seed, trigger_words, frame,
+                           random_ingredients)
         start = time.time()
         if use_as_written:
-            prompts = series.as_written(idea, trigger_words)
+            prompts = series.as_written(idea, trigger_words, plan)
             print(f"{LOG} {len(prompts)} prompts used as written (no text model)")
         elif engine == "Presets (no AI)":
             prompts = series.presets_series(plan, log=lambda t: print(f"{LOG} {t}"))

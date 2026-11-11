@@ -203,7 +203,7 @@ class Plan:
     """What the user chose, checked, with clear errors."""
 
     def __init__(self, idea, target, category, style, count, mode, strange_mix, seed, trigger_words="",
-                 frame="Landscape 16:9"):
+                 frame="Landscape 16:9", random_ingredients=True):
         g = guides()
         if target not in g:
             raise ValueError(f"Unknown target model '{target}'. Pick one from the list.")
@@ -218,6 +218,9 @@ class Plan:
         self.rng = random.Random(int(seed))
         self.trigger_words = str(trigger_words or "").strip()
         self.settings = FRAME_SETTINGS.get(frame, FRAME_SETTINGS["Landscape 16:9"])
+        # (10/11/2026, the user: "only the content of my prompt + the style, nothing else") off = no random place,
+        # time, mood or twist: the idea is only developed, faithfully, in the format of the target
+        self.random_ingredients = bool(random_ingredients)
         cats = _categories(self.family)
         if category in (None, "", CATEGORY_ANY):
             self.category = None
@@ -281,6 +284,9 @@ def _a(word):
 
 
 def _from_idea(plan, ing):
+    if not plan.random_ingredients:
+        idea = plan.idea.rstrip(" .")
+        return idea if plan.family in ("sdxl", "anime") else f"{idea[:1].upper()}{idea[1:]}."
     """Without a text model the twist is left out (in a test, 'two generations together' replaced the cat chef with
     three old men): only place, time and mood around the idea, plus the surreal touch when strange_mix is on."""
     idea = plan.idea.rstrip(" .")
@@ -373,10 +379,11 @@ def briefs(plan):
                 brief = {"category": cat["label"]["en"]}
                 if cat.get("componi") == "characters":
                     brief.update(characters.brief(rng=plan.rng))
-            ing = plan.ingredients()
-            if "subject" in brief:
-                ing.pop("setting")
-            brief.update(ing)
+            if plan.random_ingredients:
+                ing = plan.ingredients()
+                if "subject" in brief:
+                    ing.pop("setting")
+                brief.update(ing)
         out.append({"brief": brief, "style": style})
     return out
 
@@ -388,10 +395,14 @@ def render_message(plan, item, recent, first_text):
         lines.append(style_line(item["style"]))
     if plan.trigger_words:
         lines.append(f"LORA TRIGGER WORDS: {plan.trigger_words}")
+    if not plan.random_ingredients:
+        lines.append("ONLY THE IDEA: develop only what the brief says, in the format of the target model. Add only the "
+                     "visual details the format needs (framing, light, materials, colors that fit). Invent no new "
+                     "place, time of day, mood, people, animals, objects or events.")
     if "VARIATION" in item["brief"] and first_text:
         lines.append(f"FIRST VERSION: {first_text}")
         lines.append(f"VARIATION: {item['brief']['VARIATION']}")
-    elif recent:
+    elif recent and plan.random_ingredients:
         lines.append("RECENTLY MADE (do something different): " + " | ".join(recent))
     return "\n".join(lines)
 
@@ -454,12 +465,15 @@ def rewrite_series(prompts, target, generate, frame="Landscape 16:9", seed=42, s
     return out
 
 
-def as_written(idea, trigger_words=""):
+def as_written(idea, trigger_words="", plan=None):
     """The user's own prompts, word for word: one per paragraph (an empty line between them). 10/11/2026, the user:
     "if the user writes his prompt it is always reworked: let him switch the generator off and test his prompt"."""
     parts = [p.strip() for p in re.split(r"\n\s*\n", str(idea or "").strip()) if p.strip()]
     if not parts:
         raise ValueError("'Use my text as the prompt' is on but the idea box is empty: write your prompt there "
                          "(several prompts: an empty line between them).")
+    if plan is not None:
+        # the chosen style added without a text model, with the rules of the ready prompts (None = unchanged)
+        parts = [apply_style(p, plan.pick_style(), plan.family) for p in parts]
     tw = str(trigger_words or "").strip()
     return [p if not tw or p.lower().startswith(tw.lower()) else f"{tw}, {p}" for p in parts]
