@@ -44,6 +44,14 @@ Without a text model the idea is not translated: write it in English for best re
 
 `examples/z_image_prompt_series_api.json`: Z-Image Turbo, 8 prompts, one sheet at the end.
 
+## Zoom Crop / Zoom Paste
+
+Detection and matting models work on a fixed canvas (WeVisOne-VL: 1024x1024 for the whole picture), so small subjects
+and big photos get soft edges. **Vidlamp Zoom Crop** takes the boxes of a first pass (core BOUNDING_BOX, e.g. from
+WeVisOne-VL Detect), crops their area at full resolution plus a margin; run the model again on the crop, then
+**Vidlamp Zoom Paste** puts the mask back on a canvas as big as the original picture. Works well with BiRefNet
+(core RemoveBackground) on the same crop for sharp hair and fur.
+
 ## Dependencies
 
 None beyond ComfyUI (the Excel file is written without extra libraries).
