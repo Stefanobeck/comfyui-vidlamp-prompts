@@ -199,6 +199,10 @@ class VidlampPromptSeries:
                                                    "tooltip": "On: each scene gets a random place, time, mood and "
                                                               "twist around your idea. Off: only your idea and the "
                                                               "style, developed faithfully, nothing invented."}),
+                # (11/11/2026) connected = the frame of the prompts follows the real size of the pictures
+                "width": ("INT", {"forceInput": True, "tooltip": "Optional: the width of the pictures. With width "
+                                                                 "and height connected, 'frame' follows them."}),
+                "height": ("INT", {"forceInput": True, "tooltip": "Optional: the height of the pictures."}),
             },
             "hidden": {"unique_id": "UNIQUE_ID"},
         }
@@ -214,9 +218,15 @@ class VidlampPromptSeries:
 
     def run(self, idea, target, category, style, count, mode, engine, frame, strange_mix, seed, clip=None,
             trigger_words="", server_model=servers.AUTO, server_url="", system_prompt="", temperature=1.0, max_length=700,
-            use_as_written=False, random_ingredients=True, unique_id=None):
+            use_as_written=False, random_ingredients=True, width=None, height=None, unique_id=None):
+        if width and height:
+            # the frame the scenes are composed for = the real size of the pictures
+            frame = ("Landscape 16:9" if width > height * 1.1 else
+                     "Portrait 9:16" if height > width * 1.1 else "Square 1:1")
         plan = series.Plan(idea, target, category, style, count, mode, strange_mix, seed, trigger_words, frame,
                            random_ingredients)
+        if width and height:
+            plan.settings = f"Width {width}, Height {height} ({frame.split()[0].lower()})"
         start = time.time()
         if use_as_written:
             prompts = series.as_written(idea, trigger_words, plan)
